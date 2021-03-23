@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:replace="${title}"></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+  <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+
+<!--导航-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+  <div class="ui container">
+    <div class="ui inverted secondary stackable menu">
+      <a href="http://www.shaoxiongdu.top" target="_blank"><h2 class="ui teal header item">后台管理系统</h2></a>
+      <a href="#" th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>博客管理</a>
+      <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>分类管理</a>
+      <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签管理</a>
+      <a href="#" th:href="@{/admin/websiteInfo}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" setting icon"></i>网站设置</a>
+      <a href="#" th:href="@{/admin/websiteRecord}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" setting icon"></i>网站访问记录</a>
+      <div class="right m-item m-mobile-hide menu">
+        <div class="ui dropdown  item">
+          <div class="text">
+            <img class="ui avatar image" src="https://unsplash.it/100/100?image=1005" th:src="@{${session.user.avatar}}">
+            <span th:text="${session.user.nickname}">杜少雄</span>
+          </div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+    <i class="sidebar icon"></i>
+  </a>
+</nav>
+
+
+
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+  <div class="ui center aligned container">
+
+    <!--访问量数据-->
+    <h4>访问量 : <span th:text="${session.views}"></span></h4>
+    <h4 class="item">博客勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </h4>
+
+    <br><br><br>
+
+    <div class="ui inverted divided stackable grid">
+
+      <!--微信二维码-->
+      <div class="four wide column">
+        <div class="ui inverted link list">
+          <div class="item">
+            <img th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+          </div>
+        </div>
+      </div>
+
+      <!--推荐博客-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini" >最新博客</h4>
+        <div id="newblog-container">
+          <div class="ui inverted link list" th:fragment="newblogList">
+            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}"></a>
+          </div>
+        </div>
+      </div>
+
+      <!--联系作者-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini">联系作者</h4>
+        <div class="ui inverted list link">
+          <p class="item">邮箱: ShaoxiongDu@126.com</p>
+          <p class="item">QQ: 740593369</p>
+          <p class="item">手机号: 15603430511</p>
+          <a target="_blank" href="https://github.com/ShaoxiongDu" class="item">Github: ShaoxiongDu</a>
+        </div>
+      </div>
+      <!--个人说明-->
+      <!--个人说明-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini">Blog</h4>
+        <div class="ui inverted list link">
+          <p class="item">每个人都有属于自己的一片森林</p>
+          <p class="item">也许我们 从来不曾去过，</p>
+          <p class="item">但它一直在那里，总会在那里。</p>
+        </div>
+      </div>
+    </div>
+    <div class="ui inverted section divider"></div>
+    <!--版权说明-->
+
+
+    <!--ICP备案号-->
+    <div class="ui inverted list link">
+      <p class="item">Copyright© 2020-2021 杜少雄 All Rights Reserved</p>
+      <p class="item">通讯地址: 山西省太原市晋源区太原科技大学南校区</p>
+      <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a>
+
+    </div>
+  </div>
+
+</footer>
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+
+</th:block>
+
+</body>
+</html>

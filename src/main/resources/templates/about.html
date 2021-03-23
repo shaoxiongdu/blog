@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head  th:replace="_fragments :: head(~{::title})">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于作者</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+  <!--导航-->
+  <nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+    <div class="ui container">
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui teal header item">Blog</h2>
+        <a href="#" class=" m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+        <a href="#" class=" m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+        <a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+        <div class="right m-item item m-mobile-hide">
+          <div class="ui icon inverted transparent input m-margin-tb-tiny">
+            <input type="text" placeholder="Search....">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+  </nav>
+
+  <!--中间内容-->
+  <div  class="m-container m-padded-tb-big animated fadeIn">
+
+    <!--适配移动端-->
+    <div class="ui container">
+
+      <div class="ui stackable grid">
+        <div class="eleven wide column">
+          <div class="ui segment">
+            <img th:src="${session.aboutMeImageUrl}" align="center" alt="欢迎扫码关注" title="欢迎扫码关注" class="ui rounded image">
+          </div>
+        </div>
+        <div class="five wide column">
+          <div class="ui top attached segment">
+            <div class="center aligned ui header">关于作者</div>
+            <div class="attached segment center aligned ui me-text">
+              <p th:utext="${session.aboutMeContent}">
+                  我是替换内容
+              </p>
+
+            </div>
+            <div class="attached segment ui aligned">
+
+              <h3 align="center">愿你保持独立思考<br>不卑不亢<br>活成自己想要的样子！</h3>
+
+            <!--个人标签-->
+            <div class="attached segment ui aligned">
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>好玩</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>有趣</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>沙雕</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>开源项目</h5></div>
+
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>扫码关注</h5></div>
+
+            </div>
+
+            <!--联系-->
+            <div class="ui attached bottom segment center aligned">
+              <a target="_blank" title="Github开源地址" href="https://github.com/ShaoxiongDu" class="ui icon circular button">
+                <i class="github icon"></i>
+              </a>
+              <a target="_blank" title="微博主页" href="https://weibo.com/7510528502/profile" class="ui icon circular button">
+                <i class="weibo icon"></i>
+              </a>
+              <a target="_blank"  class="ui qq icon circular button">
+                <i class="qq icon"></i>
+              </a>
+
+              <a target="_blank" title="steam主页"  href="https://steamcommunity.com/profiles/76561198446690218/" class="ui icon circular button">
+                <i class="steam icon"></i>
+              </a>
+
+              <a target="_blank" title="给我发送邮件" href="mailto:shaoxiongdu@126.com" class="ui icon circular button">
+                <i class="mail icon"></i>
+              </a>
+
+              </div>
+              <!--QQ-->
+              <div class="ui qqQR flowing popup position top center  transition hidden">
+                <div class="ui teal basic label">
+                  <div class="image">
+                    740593369
+                  </div>
+                </div>
+              </div></div>
+
+          </div>
+        </div>
+
+      <!--适配移动端结束-->
+    </div>
+  </div>
+
+
+</div>
+
+
+  <br>
+  <!--底部footer-->
+  <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+
+  </footer>
+  <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <!--/*/</th:block>/*/-->
+
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    /*QQ二维码弹出*/
+    $('.qq').popup({
+      popup : $('.qqQR.popup'),
+      position: 'bottom center'
+    });
+
+  </script>
+</body>
+</html>
