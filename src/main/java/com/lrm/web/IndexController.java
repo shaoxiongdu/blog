@@ -52,7 +52,7 @@ public class IndexController {
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listType());
         model.addAttribute("tags", tagService.listTag());
-        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(10));
         session.setAttribute("views",websiteInfoService.addOneForViews());
         session.setAttribute("aboutMeImageUrl",websiteInfoService.getAboutMeImageUrl());
         session.setAttribute("topTitle",websiteInfoService.getTopTitle());
@@ -82,7 +82,7 @@ public class IndexController {
 
     @GetMapping("/footer/newblog")
     public String newblogs(Model model) {
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(5));
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(6));
         return "_fragments :: newblogList";
     }
 

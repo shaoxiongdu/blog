@@ -8,7 +8,7 @@ public class PushWechatMessageUtil {
 
     private static String PUSH_REQUEST_URL = "http://pushplus.hxtrip.com/send";
 
-    private static String TOKEN = "696841125e104edc816aaf85edfd3967";
+    private static final String TOKEN = "ad3814989d0541bdb0d3f5ad11aaa922";
 
     public static String pushMessageByPost(String title,String content){
 

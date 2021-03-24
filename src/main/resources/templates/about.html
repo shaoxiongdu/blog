@@ -46,7 +46,7 @@
         </div>
         <div class="five wide column">
           <div class="ui top attached segment">
-            <div class="center aligned ui header">关于作者</div>
+            <div class="center aligned ui header">关于站长</div>
             <div class="attached segment center aligned ui me-text">
               <p th:utext="${session.aboutMeContent}">
                   我是替换内容
@@ -76,27 +76,19 @@
               <a target="_blank" title="微博主页" href="https://weibo.com/7510528502/profile" class="ui icon circular button">
                 <i class="weibo icon"></i>
               </a>
-              <a target="_blank"  class="ui qq icon circular button">
-                <i class="qq icon"></i>
-              </a>
 
               <a target="_blank" title="steam主页"  href="https://steamcommunity.com/profiles/76561198446690218/" class="ui icon circular button">
                 <i class="steam icon"></i>
               </a>
 
-              <a target="_blank" title="给我发送邮件" href="mailto:shaoxiongdu@126.com" class="ui icon circular button">
+              <a target="_blank" title="给我发送邮件" href="mailto:shaoxiong.dev@aliyun.com" class="ui icon circular button">
                 <i class="mail icon"></i>
               </a>
 
               </div>
-              <!--QQ-->
-              <div class="ui qqQR flowing popup position top center  transition hidden">
-                <div class="ui teal basic label">
-                  <div class="image">
-                    740593369
-                  </div>
-                </div>
-              </div></div>
+
+
+            </div>
 
           </div>
         </div>
@@ -122,12 +114,6 @@
   <script>
     $('.menu.toggle').click(function () {
       $('.m-item').toggleClass('m-mobile-hide');
-    });
-
-    /*QQ二维码弹出*/
-    $('.qq').popup({
-      popup : $('.qqQR.popup'),
-      position: 'bottom center'
     });
 
   </script>

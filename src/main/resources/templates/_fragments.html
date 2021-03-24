@@ -28,8 +28,8 @@
       <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"></i>标签</a>
       <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"></i>归档</a>
       <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"></i>关于</a>
-      <a href="https://github.com/ShaoxiongDu"  target="_blank"  class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'">作者Github</a>
-      <a href="https://github.com/ShaoxiongDu/blog"  target="_blank"  class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'">网站开源</a>
+      <a href="https://github.com/ShaoxiongDu"  target="_blank"  class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'">站长Github</a>
+      <a href="https://github.com/ShaoxiongDu/blog"  target="_blank"  class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'">项目开源</a>
       <div class="right m-item item m-mobile-hide">
         <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
           <div class="ui icon inverted transparent input m-margin-tb-tiny">
@@ -50,7 +50,7 @@
   <div class="ui center aligned container">
 
     <!--访问量数据-->
-   <!-- <p>访问量 : <span th:text="${session.views}"></span></p>-->
+    <p>访问量 : <span th:text="${session.views}"></span></p>
 
     <p class="item">勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </p>
     <br><br>
@@ -63,11 +63,11 @@
         <h4 class="ui inverted header me-opacity-mini">Blog</h4>
         <div class="ui inverted list link">
           <p class="item">每个人都有属于自己的一片森林</p>
-          <p class="item">也许我们 从来不曾去过，</p>
-          <p class="item">但它一直在那里，总会在那里。</p>
+          <p class="item">也许我们从来不曾去过</p>
+          <p class="item">但它一直在那里</p>
+          <p class="item">总会在那里。</p>
         </div>
       </div>
-
 
 
       <!--推荐博客-->
@@ -82,10 +82,10 @@
 
       <!--联系作者-->
       <div class="four wide column">
-        <h4 class="ui inverted header me-opacity-mini">联系作者</h4>
+        <h4 class="ui inverted header me-opacity-mini">联系站长</h4>
         <div class="ui inverted list link">
           <p class="item">Github: ShaoxiongDu</p>
-          <p class="item">作者微信: oldDu0511</p>
+          <p class="item">微信: ShaoxiongDu_dev</p>
           <p class="item">邮箱: Shaoxiong.dev@aliyun.com</p>
           <p class="item">地址: 山西省太原市太原科技大学南校区</p>
 
@@ -94,14 +94,13 @@
 
       <!--微信二维码-->
       <div class="four wide column">
-        <h4 class="ui inverted header me-opacity-mini" >作者微信</h4>
+        <h4 class="ui inverted header me-opacity-mini" >站长微信</h4>
         <div class="ui inverted link list">
 
-          <a class="item" href="#"><img th:src="@{/images/wechat.jpg}"   class="ui rounded image"  style="width: 100px"></a>
+          <a class="item" href="#" th:href="@{/about}"><img th:src="@{/images/wechat.jpg}"   class="ui rounded image"  style="width: 100px"></a>
 
         </div>
       </div>
-
 
     </div>
 
