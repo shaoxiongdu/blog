@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://ShaoxiongDu.mysql.rds.aliyuncs.com:3306/blog?useSSL=false&useUnicode=true&characterEncoding=utf8
-    username: root
-    password: DSXdsx05117218
+    url: 此处填写数据库链接
+    username: 此处填写您的数据库账号
+    password: 此处填写您的数据库密码
   jpa:
     hibernate:
       ddl-auto: none
@@ -11,8 +11,8 @@ spring:
 
 logging:
   level:
-    root: error
-    com.lrm: error
+    root: info
+    com.lrm: debug
   file: log/blog.log
 
 
