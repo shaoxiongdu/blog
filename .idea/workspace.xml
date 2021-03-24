@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="修复首页搜索异常，优化用户体验">
-      <change afterPath="$PROJECT_DIR$/阿里云开启80端口.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/util/PushWechatMessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/util/PushWechatMessageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/aboutMe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/aboutMeCodeKey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/wechat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/wechat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/wechatPay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/wechatPay.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
+    <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="优化用户体验">
+      <change afterPath="$PROJECT_DIR$/Github提交443" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -808,7 +796,7 @@
       <workItem from="1616505649254" duration="70000" />
       <workItem from="1616505737883" duration="23000" />
       <workItem from="1616505792649" duration="1620000" />
-      <workItem from="1616560553017" duration="2307000" />
+      <workItem from="1616560553017" duration="2749000" />
     </task>
     <task id="LOCAL-00001" summary="项目部署完成">
       <created>1611319493545</created>
@@ -950,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616506174642</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="优化用户体验">
+      <created>1616563023904</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616563023904</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1112,7 +1107,8 @@
     <MESSAGE value="美化公众号引流照片" />
     <MESSAGE value="优化体验" />
     <MESSAGE value="修复首页搜索异常，优化用户体验" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复首页搜索异常，优化用户体验" />
+    <MESSAGE value="优化用户体验" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化用户体验" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
