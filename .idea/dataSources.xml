@@ -5,7 +5,7 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://shaoxiongdu.mysql.rds.aliyuncs.com:3306/blog?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
+      <jdbc-url>jdbc:mysql://rm-bp10dkvhokk30a8ae6o.mysql.rds.aliyuncs.com :3306/blog?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="blog/Hibernate" uuid="e428010f-6ae6-41bf-8270-b3356258a469">
@@ -17,11 +17,11 @@
       <jdbc-url>jdbc:mysql://shaoxiongdu.mysql.rds.aliyuncs.com:3306/blog?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="MySQL - @localhost" uuid="7775b70f-0d99-47dc-a793-d3fa8a333888">
+    <data-source source="LOCAL" name="阿里云" uuid="a1651250-4c5d-419b-b05c-405d6e06c42a">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://rm-bp10dkvhokk30a8ae6o.mysql.rds.aliyuncs.com:3306/blog</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
