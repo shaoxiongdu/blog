@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:fragment="head(title)">
+
+  <!--百度统计-->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f6089b5b5176e6d8e868f0e4b3cc0168";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title th:replace="${title}"></title>
@@ -8,6 +20,9 @@
   <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
   <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
 </head>
+
+
+
 <body>
 
 <!--导航-->
@@ -43,29 +58,35 @@
 
 
 <!--底部footer-->
+
+<!--底部footer-->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
   <div class="ui center aligned container">
 
     <!--访问量数据-->
-    <h4>访问量 : <span th:text="${session.views}"></span></h4>
-    <h4 class="item">博客勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </h4>
+    <p>访问量 : <span th:text="${session.views}"></span></p>
 
-    <br><br><br>
+    <p class="item">勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </p>
+    <br><br>
 
     <div class="ui inverted divided stackable grid">
 
-      <!--微信二维码-->
+
+      <!--个人说明-->
       <div class="four wide column">
-        <div class="ui inverted link list">
-          <div class="item">
-            <img th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
-          </div>
+        <h4 class="ui inverted header me-opacity-mini">Blog</h4>
+        <div class="ui inverted list link">
+          <p class="item">每个人都有属于自己的一片森林</p>
+          <p class="item">也许我们从来不曾去过</p>
+          <p class="item">但它一直在那里</p>
+          <p class="item">总会在那里。</p>
         </div>
       </div>
 
+
       <!--推荐博客-->
       <div class="four wide column">
-        <h4 class="ui inverted header me-opacity-mini" >最新博客</h4>
+        <h4 class="ui inverted header me-opacity-mini" >最新推荐</h4>
         <div id="newblog-container">
           <div class="ui inverted link list" th:fragment="newblogList">
             <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}"></a>
@@ -75,34 +96,33 @@
 
       <!--联系作者-->
       <div class="four wide column">
-        <h4 class="ui inverted header me-opacity-mini">联系作者</h4>
+        <h4 class="ui inverted header me-opacity-mini">联系站长</h4>
         <div class="ui inverted list link">
-          <p class="item">邮箱: ShaoxiongDu@126.com</p>
-          <p class="item">QQ: 740593369</p>
-          <p class="item">手机号: 15603430511</p>
-          <a target="_blank" href="https://github.com/ShaoxiongDu" class="item">Github: ShaoxiongDu</a>
-        </div>
-      </div>
-      <!--个人说明-->
-      <!--个人说明-->
-      <div class="four wide column">
-        <h4 class="ui inverted header me-opacity-mini">Blog</h4>
-        <div class="ui inverted list link">
-          <p class="item">每个人都有属于自己的一片森林</p>
-          <p class="item">也许我们 从来不曾去过，</p>
-          <p class="item">但它一直在那里，总会在那里。</p>
-        </div>
-      </div>
-    </div>
-    <div class="ui inverted section divider"></div>
-    <!--版权说明-->
+          <p class="item">Github: ShaoxiongDu</p>
+          <p class="item">微信: ShaoxiongDu_dev</p>
+          <p class="item">邮箱: Shaoxiong.dev@aliyun.com</p>
+          <p class="item">地址: 山西省太原市太原科技大学南校区</p>
 
+        </div>
+      </div>
+
+      <!--微信二维码-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini" >站长微信</h4>
+        <div class="ui inverted link list">
+
+          <a class="item" href="#" th:href="@{/about}"><img th:src="@{/images/wechat.jpg}"   class="ui rounded image"  style="width: 100px"></a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ui inverted section divider"></div>
 
     <!--ICP备案号-->
     <div class="ui inverted list link">
-      <p class="item">Copyright© 2020-2021 杜少雄 All Rights Reserved</p>
-      <p class="item">通讯地址: 山西省太原市晋源区太原科技大学南校区</p>
-      <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a>
+      <p style="color: #AAAAAA" >@程序员不是天生的 版权所有 © 杜少雄 2020-2021 保留所有权利 <a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a> </p>
 
     </div>
   </div>
