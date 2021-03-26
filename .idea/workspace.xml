@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="修复文本错误">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -802,7 +804,7 @@
       <workItem from="1616585900696" duration="1186000" />
       <workItem from="1616736689943" duration="2048000" />
       <workItem from="1616746175393" duration="1619000" />
-      <workItem from="1616748204504" duration="695000" />
+      <workItem from="1616748204504" duration="1915000" />
     </task>
     <task id="LOCAL-00001" summary="项目部署完成">
       <created>1611319493545</created>
@@ -986,7 +988,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616748369066</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="修复文本错误">
+      <created>1616748911728</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1616748911728</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">

@@ -14,6 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by limi on 2017/10/22.
@@ -59,6 +60,12 @@ public class CommentServiceImpl implements CommentService {
             comment.setParentComment(null);
         }
         comment.setCreateTime(new Date());
+
+        String avatarRequestUrl = "https://picsum.photos/id/";
+        avatarRequestUrl += new Random().nextInt(1000) + 1;
+        avatarRequestUrl += "/200";
+
+        comment.setAvatar(avatarRequestUrl);
         return commentRepository.save(comment);
     }
 
