@@ -1,6 +1,11 @@
 # <center>SpringBoot个人博客</center>
 
-## 一.博客效果预览 &nbsp;&nbsp;&nbsp;
+## 一.博客在线预览
+
+<a href='http://blog.shaoxiongdu.top' target ='_blank' >http://blog.ShaoxiongDu.top </a>
+
+
+## 二.博客截图预览 &nbsp;&nbsp;&nbsp;
 
 #### 博客首页预览
 
@@ -24,25 +29,18 @@
 
 ![关于页面预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210350355.png)
 
-## 二.博客效果在线预览
-
-<a href='http://blog.shaoxiongdu.top' target ='_blank' >http://blog.ShaoxiongDu.top </a>
 
 ## 三.项目技术
 
 * 后端SpringBoot框架 分为控制层(Controller) 业务层(Service) 数据持久层(Dao) 按照SpringMVC架构模式规范进行开发.
 
-* 前端Semantic UI 前端模板引擎Thymeleaf
+* 前端UI采用Semantic UI 模板引擎Thymeleaf 
 
 * 数据持久层采用SpringBootJPA，数据库为MySQL8.0
 
 ## 四.运行教程
 
-> #### 公告
-
-###### 由于某些因素，国内用户会出现克隆速度过慢乃至无法克隆的情况，想要获取项目本地压缩包的同学公众号【Github推荐】【二维码在文末】回复【blog】或者【个人博客】获取项目压缩文件。
-
-1.导入项目
+#### 1.导入项目
 
     Fork本项目,用IDEA新建项目，点击 Create Project For Version Control，复制项目github地址 粘贴到IDEA中的Git地址 选择　点击clone　等待项目下载即可
 
@@ -93,7 +91,7 @@
 > 我会将您添加到项目贡献者中。
 
 
-## 六.开源项目
+## 六.更多好玩有趣的开源项目
 
 > ### 我的公众号【Github推荐】，持续分享一些好玩，有趣又沙雕的开源项目! 欢迎关注!
 
