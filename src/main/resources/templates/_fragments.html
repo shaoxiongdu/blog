@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
 <head th:fragment="head(title)">
   <meta charset="UTF-8">
-  <!--百度搜索站长管理-->
-  <meta name="baidu-site-verification" content="code-YHtfJm5u87" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title th:replace="${title}"></title>
 
@@ -15,18 +15,21 @@
   <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
   <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
 
-  <!--百度统计-->
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?ec67fe367b756f47737b99d404889527";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 </head>
+
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?f6089b5b5176e6d8e868f0e4b3cc0168";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
 
 
 

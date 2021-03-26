@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://rm-bp10dkvhokk30a8ae6oshaoxiong.mysql.rds.aliyuncs.com:3306/blog
+    url: jdbc:mysql://rm-bp10dkvhokk30a8ae6oShaoxiong.mysql.rds.aliyuncs.com:3306/blog
     username: root
     password: root
   jpa:
