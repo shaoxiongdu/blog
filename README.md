@@ -83,7 +83,7 @@
 
 ## 五.部署教程
 
-详情见 [SpringBoot项目部署服务器教程](http://localhost/blog/5)
+详情见 [SpringBoot项目部署服务器教程](http://blog.shaoxiongdu.top/blog/5)
 
 ## 六.项目反馈及改进
 
