@@ -20,7 +20,11 @@ public class WebsiteInfoController {
     WebsiteInfoService websiteInfoService;
 
     @GetMapping("/admin/websiteInfo")
-    public String toWebsiteInfoPage(){
+    public String toWebsiteInfoPage(HttpSession session){
+        String aboutMeImageUrl = websiteInfoService.getAboutMeImageUrl();
+        String topTitle = websiteInfoService.getTopTitle();
+        session.setAttribute("topTitle",topTitle);
+        session.setAttribute("aboutMeImageUrl",aboutMeImageUrl);
         return "admin/websiteInfo";
     }
 
@@ -30,7 +34,6 @@ public class WebsiteInfoController {
         session.setAttribute("aboutMeImageUrl",s);
         return "/admin/websiteInfo";
     }
-
 
     @PostMapping("/admin/updateTopTitle")
     public String updateTopTitle(String topTitle,HttpSession session){
