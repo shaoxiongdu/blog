@@ -81,10 +81,9 @@
 ## 六.项目反馈及改进
 
 > 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.
-> 并且将您添加到项目贡献者列表中。
+> 并且将您添加到项目贡献者列表中.
 
-## 六.更多好玩有趣的开源项目
+## 七.联系我
 
-> ### 我的公众号【Github推荐】，持续分享一些好玩，有趣又沙雕的开源项目! 欢迎关注!
-
-<img src="https://gitee.com/ShaoxiongDu/imageBed/raw/master/development/VXshare.jpg" width='500' />
+#### 如需联系我,访问我的个人博客 [http://blog.shaoxiongdu.top](http://blog.shaoxiongdu.top) 
+#### 添加我的个人微信或者给我发邮件均可  看到就会回复.
