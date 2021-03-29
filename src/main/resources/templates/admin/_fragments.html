@@ -58,16 +58,9 @@
 
 
 <!--底部footer-->
-
-<!--底部footer-->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
   <div class="ui center aligned container">
 
-    <!--访问量数据-->
-    <p>访问量 : <span th:text="${session.views}"></span></p>
-
-    <p class="item">勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </p>
-    <br><br>
 
     <div class="ui inverted divided stackable grid">
 
@@ -78,8 +71,7 @@
         <div class="ui inverted list link">
           <p class="item">每个人都有属于自己的一片森林</p>
           <p class="item">也许我们从来不曾去过</p>
-          <p class="item">但它一直在那里</p>
-          <p class="item">总会在那里。</p>
+          <p class="item">但它一直在那里,总会在那里。</p>
         </div>
       </div>
 
@@ -98,11 +90,9 @@
       <div class="four wide column">
         <h4 class="ui inverted header me-opacity-mini">联系站长</h4>
         <div class="ui inverted list link">
-          <p class="item">Github: ShaoxiongDu</p>
-          <p class="item">微信: ShaoxiongDu_dev</p>
-          <p class="item">邮箱: Shaoxiong.dev@aliyun.com</p>
-          <p class="item">地址: 山西省太原市太原科技大学南校区</p>
-
+          <p class="item">公众号:[Github推荐]</p>
+          <p class="item">个人微信:ShaoxiongDu_dev</p>
+          <p class="item">电子邮箱:shaoxiongdu.dev@gmail.com</p>
         </div>
       </div>
 
@@ -120,10 +110,14 @@
 
     <div class="ui inverted section divider"></div>
 
+
+
     <!--ICP备案号-->
     <div class="ui inverted list link">
       <p style="color: #AAAAAA" >@程序员不是天生的 版权所有 © 杜少雄 2020-2021 保留所有权利 <a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a> </p>
 
+      <!--访问量数据-->
+      <p class="item">访问量 : <span th:text="${session.views}"></span> &nbsp;&nbsp;&nbsp; 勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </p>
     </div>
   </div>
 

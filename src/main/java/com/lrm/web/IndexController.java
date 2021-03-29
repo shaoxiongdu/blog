@@ -82,7 +82,7 @@ public class IndexController {
 
     @GetMapping("/footer/newblog")
     public String newblogs(Model model) {
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(6));
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(4));
         return "_fragments :: newblogList";
     }
 

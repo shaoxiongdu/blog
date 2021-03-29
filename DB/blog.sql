@@ -101,3 +101,5 @@ INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeImageUrl', '
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('topTitle', 'DSX_BLOG');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('views', '12383');
 
+INSERT INTO blog.t_user (id, avatar, create_time, email, nickname, password, type, update_time, username) VALUES (1, 'http://p1.music.126.net/d5zrKbBHSO43vegQ9L5gjQ==/109951163963019922.jpg', '2021-03-26 13:44:05', 'Shaoxiong.dev@aliyun.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '2021-03-26 13:44:23', 'admin');
+

@@ -40,6 +40,6 @@ public class MD5Utils {
     }
 
     public static void main(String[] args) {
-        System.out.println(MD5Utils.code("142330199909117218"));
+        System.out.println(MD5Utils.code("admin"));
     }
 }
