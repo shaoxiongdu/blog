@@ -809,7 +809,9 @@
       <workItem from="1616842615844" duration="216000" />
       <workItem from="1617002794418" duration="1569000" />
       <workItem from="1617004693510" duration="575000" />
-      <workItem from="1617005807574" duration="371000" />
+      <workItem from="1617005807574" duration="778000" />
+      <workItem from="1617009992276" duration="310000" />
+      <workItem from="1617090788738" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="项目部署完成">
       <created>1611319493545</created>
@@ -1035,7 +1037,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617005199306</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="优化用户体验">
+      <created>1617006290087</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1617006290087</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">

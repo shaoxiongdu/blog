@@ -85,5 +85,4 @@
 
 ## 七.联系我
 
-#### 如需联系我,访问我的个人博客 [http://blog.shaoxiongdu.top](http://blog.shaoxiongdu.top) 
-#### 添加我的个人微信或者给我发邮件均可  看到就会回复.
+## <a href="https://www.shaoxiongdu.top" target="_blank">技术博客</a> | <a href="https://github.com/ShaoxiongDu/ShaoxiongDu_Blog" target="_blank">开源地址</a> | <a href="mailto:shaoxiongdu.dev@gmail.com">shaoxiongdu.dev@gmail.com</a> | <a href="https://github.com/ShaoxiongDu">VX:ShaoxiongDu_dev</a>
