@@ -90,7 +90,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +167,11 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="数据库" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -239,6 +244,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lrm/web/TypeShowController.java" />
       </list>
     </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="blog/invalid/JPA" />
+      <facet id="blog/invalid/Spring" />
+      <facet id="blog/invalid/Web" />
+    </ignored-facets>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -391,7 +403,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;MySQL" />
     <property name="database.data.extractors.current.export.id" value="SQL 插入" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -404,7 +416,7 @@
     <property name="project.structure.side.proportion" value="0.49947312" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="ssh.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -430,6 +442,21 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:80/archives" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:80/admin/websiteRecord" />
@@ -640,6 +667,9 @@
       <setting name="depsClasspath" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
     <configuration name="rest-api_4#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http">
       <method v="2" />
     </configuration>
@@ -743,11 +773,15 @@
       <item itemvalue="JUnit.BlogApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.BlogApplication" />
       <item itemvalue="应用程序.MD5Utils" />
+      <item itemvalue="HTTP 请求.rest-api#1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.rest-api#1" />
         <item itemvalue="应用程序.MD5Utils" />
         <item itemvalue="JUnit.BlogApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.BlogApplicationTests.contextLoads" />
+        <item itemvalue="应用程序.MD5Utils" />
       </list>
     </recent_temporary>
   </component>
@@ -759,12 +793,13 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
+      <branch name="master" repository="C:\JavaProject\blog" />
       <changelist id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="" />
       <created>1507866632037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1507866632037</updated>
+      <updated>1617182653038</updated>
       <workItem from="1507866633768" duration="7528000" />
       <workItem from="1507897581948" duration="2752000" />
       <workItem from="1507940788489" duration="6639000" />
@@ -895,7 +930,7 @@
       <workItem from="1617004693510" duration="575000" />
       <workItem from="1617005807574" duration="778000" />
       <workItem from="1617009992276" duration="310000" />
-      <workItem from="1617090788738" duration="354000" />
+      <workItem from="1617090788738" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="项目部署完成">
       <created>1611319493545</created>
