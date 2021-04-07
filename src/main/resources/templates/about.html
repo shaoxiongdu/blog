@@ -10,7 +10,7 @@
 <body>
 
   <!--导航-->
-  <nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+  <nav th:replace="_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
         <h2 class="ui teal header item">Blog</h2>
@@ -41,12 +41,12 @@
       <div class="ui stackable grid">
         <div class="eleven wide column">
           <div class="ui segment">
-            <img th:src="${session.aboutMeImageUrl}" align="center" alt="欢迎扫码关注" title="欢迎扫码关注" class="ui rounded image">
+            <img th:src="${session.aboutMeImageUrl}" align="center" class="ui rounded image">
           </div>
         </div>
         <div class="five wide column">
           <div class="ui top attached segment">
-            <div class="center aligned ui header">关于站长</div>
+            <div class="center aligned ui header">关于作者</div>
             <div class="attached segment center aligned ui me-text">
               <p th:utext="${session.aboutMeContent}">
                   我是替换内容
@@ -55,24 +55,28 @@
             </div>
             <div class="attached segment ui aligned">
 
-              <h3 align="center">愿你保持独立思考<br>不卑不亢<br>活成自己想要的样子！</h3>
+              <h3 align="center">保持独立思考,不卑不亢<br>活成自己想要的样子！</h3>
 
             <!--个人标签-->
             <div class="attached segment ui aligned">
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>好玩</h5></div>
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>有趣</h5></div>
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>沙雕</h5></div>
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>开源项目</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>Java开发</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>数据库</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>SpringBoot</h5></div>
+              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>敏捷开发</h5></div>
 
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>扫码关注</h5></div>
 
             </div>
 
             <!--联系-->
             <div class="ui attached bottom segment center aligned">
-              <a target="_blank" title="Github开源地址" href="https://github.com/ShaoxiongDu" class="ui icon circular button">
+              <a target="_blank" title="Github开源地址" href="https://github.com/shaoxiongdu" class="ui icon circular button">
                 <i class="github icon"></i>
               </a>
+
+              <a target="_blank" title="BiliBili主页"  href="https://space.bilibili.com/175560067" class="ui icon circular button">
+                <i class="bitcoin icon"></i>
+              </a>
+
               <a target="_blank" title="微博主页" href="https://weibo.com/7510528502/profile" class="ui icon circular button">
                 <i class="weibo icon"></i>
               </a>
@@ -81,7 +85,9 @@
                 <i class="steam icon"></i>
               </a>
 
-              <a target="_blank" title="给我发送邮件" href="mailto:shaoxiong.dev@aliyun.com" class="ui icon circular button">
+
+
+              <a target="_blank" title="给我发送邮件" href="mailto:shaoxiongdu.dev@gmail.com" class="ui icon circular button">
                 <i class="mail icon"></i>
               </a>
 

@@ -82,7 +82,3 @@
 
 > 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.
 > 并且将您添加到项目贡献者列表中.
-
-## 七.联系我
-
-## <a href="https://www.shaoxiongdu.top" target="_blank">技术博客</a> | <a href="https://github.com/ShaoxiongDu/ShaoxiongDu_Blog" target="_blank">开源地址</a> | <a href="mailto:shaoxiongdu.dev@gmail.com">shaoxiongdu.dev@gmail.com</a> | <a href="https://github.com/ShaoxiongDu">VX:ShaoxiongDu_dev</a>

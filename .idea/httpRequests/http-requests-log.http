@@ -1,3 +1,10 @@
+GET http://localhost:80/archives
+Accept: application/json
+
+<> 2021-04-07T202901.200.html
+
+###
+
 GET http://localhost:80/admin/websiteRecord
 Accept: application/json
 
