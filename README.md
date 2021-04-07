@@ -23,8 +23,6 @@
 
 ![博客底部栏预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210302817.png)
 
-![博客归档](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210329394.png)
-
 #### 关于页面预览
 
 ![关于页面预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210350355.png)
