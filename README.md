@@ -9,34 +9,37 @@
 
 #### 博客首页预览
 
-![博客首页预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210101326.png)
+![image-20210407205111437](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205111437.png)
 
 #### 博客详情预览
 
-![博客详情预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210154613.png)
+![image-20210407205125008](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205125008.png)
 
-#### 博客评论区预览
 
-![博客评论区预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210236492.png)
 
 #### 博客底部栏预览
 
-![博客底部栏预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210302817.png)
+![image-20210407205240325](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205240325.png)
 
 #### 关于页面预览
 
-![关于页面预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210323210350355.png)
+![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205220706.png)
 
+## 三.项目选型
 
-## 三.项目技术
-
-* 后端SpringBoot框架 分为控制层(Controller) 业务层(Service) 数据持久层(Dao) 按照SpringMVC架构模式规范进行开发.
-
-* 前端UI采用Semantic UI 模板引擎Thymeleaf 
-
-* 数据持久层采用SpringBootJPA，数据库为MySQL8.0
+| 个人博客         | 语言                 | 版本          |
+| ---------------- | -------------------- | ------------- |
+| 前端基本语言     | HTML_+CSS+JavaScript |               |
+| 前端UI框架       | SemanticUI           | 2.2.4         |
+| 前端渲染模板引擎 | Themeleaf            | 2.1.5.RELEASE |
+| 后端框架         | SpringBoot           | 1.5.7.RELEASE |
+| JDK版本          | Java                 | 1.8           |
+| 数据持久层       | SpringBootJPA        | 1.5.7.RELEASE |
+| 数据库驱动       | MySQL                | 5.1.44        |
 
 ## 四.运行教程
+
+
 
 #### 1.导入项目
 

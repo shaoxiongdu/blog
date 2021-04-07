@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="大幅度调整项目架构">
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2021-04-07T202901.200.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/blog.log.2021-03-31.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-03-07.0" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog.log.2021-03-29.0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/ArchiveShowController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/CodeKey.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/openSourceUrl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/qq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/wechat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/wechat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/wechatPay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/zhiFuBaoPay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/头像.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/archives.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/阿里云开启80端口.txt" beforeDir="false" afterPath="$PROJECT_DIR$/阿里云开启80端口.txt" afterDir="false" />
     </list>
     <list id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="优化用户体验">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
@@ -1163,9 +1145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1617182653038</updated>
       <workItem from="1617717515594" duration="169000" />
-      <workItem from="1617795793219" duration="3718000" />
+      <workItem from="1617795793219" duration="4633000" />
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="大幅度调整项目架构">
+      <created>1617799652422</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1617799652422</updated>
+    </task>
+    <task id="LOCAL-00037" summary="大幅度调整项目架构">
+      <created>1617799701459</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1617799701459</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1334,9 +1330,9 @@
     <MESSAGE value="新增百度统计插件功能,评论头像随机生成" />
     <MESSAGE value="修复百度统计" />
     <MESSAGE value="修复管理员头像404错误,优化readme文件" />
-    <MESSAGE value="大幅度调整项目架构" />
     <MESSAGE value="优化用户体验" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化用户体验" />
+    <MESSAGE value="大幅度调整项目架构" />
+    <option name="LAST_COMMIT_MESSAGE" value="大幅度调整项目架构" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
