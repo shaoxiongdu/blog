@@ -96,12 +96,12 @@
           </thead>
           <tbody>
           <tr th:each="blog,iterStat : ${page.content}">
-            <td th:text="${iterStat.count}">1</td>
-            <td th:text="${blog.title}">刻意练习清单</td>
-            <td th:text="${blog.type.name}">认知升级</td>
-            <td th:text="${blog.recommend} ? '是':'否'">是</td>
-            <td th:text="${blog.published} ? '发布':'草稿'">草稿</td>
-            <td th:text="${blog.updateTime}">2017-10-02 09:45</td>
+            <td th:text="${iterStat.count}"></td>
+            <td th:text="${blog.title}"></td>
+            <td th:text="${blog.type.name}"></td>
+            <td th:text="${blog.recommend} ? '是':'否'"></td>
+            <td th:text="${blog.published} ? '发布':'草稿'"></td>
+            <td th:text="${blog.updateTime}"></td>
             <td>
               <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
               <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>

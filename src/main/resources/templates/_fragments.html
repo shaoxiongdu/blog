@@ -35,7 +35,7 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
   <div class="ui container">
     <div class="ui inverted secondary stackable menu" style="font-size: 17px">
-      <a href="http://www.shaoxiongdu.top/admin/blogs/" target="_blank" ><h2 class="ui teal header item" th:utext="${session.topTitle}"></h2></a>
+      <a href="http://www.shaoxiongdu.cn/admin/blogs/" target="_blank" ><h2 class="ui teal header item" th:utext="${session.topTitle}"></h2></a>
       <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
       <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"></i>分类</a>
       <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"></i>标签</a>
@@ -92,8 +92,8 @@
         <div class="ui inverted list link">
           <p class="item">QQ:740593369</p>
           <p class="item">微信:15603430511</p>
-          <p class="item">GitHub:ShaoxiongDu</p>
-          <p class="item">邮箱:shaoxiongdu.dev@gmail.com</p>
+          <p class="item" >GitHub:ShaoxiongDu</p>
+          <p class="item" >邮箱:shaoxiongdu.dev@gmail.com</p>
         </div>
       </div>
 
@@ -113,7 +113,8 @@
 
     <!--ICP备案号-->
     <div class="ui inverted list link">
-      <p style="color: #AAAAAA" >程序员不是天生的 | @版权所有 © 杜少雄 2020-2021 保留所有权利 <a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a> </p>
+      <p style="color: #AAAAAA;font-size: 17px" >程序员不是天生的 | @版权所有 © 杜少雄 2021 保留所有权利<a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>&nbsp;&nbsp;&nbsp;晋ICP备2020012997号-2</a> <p>
+
 
       <!--访问量数据-->
       <p class="item">访问量 : <span th:text="${session.views}"></span> &nbsp;&nbsp;&nbsp; 勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </p>

@@ -83,13 +83,10 @@
             <li>作者：<span th:text="${blog.user.nickname}"></span><a href="#" th:href="@{/about}" target="_blank">（联系作者）</a></li>
             <li>发表时间：<span th:text="${#dates.format(blog.createTime,'yyyy-MM-dd HH:mm')}"></span></li>
             <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
-            <li>公众号转载：请在文末添加作者公众号【Github推荐】二维码 ---> </li>
+            <li>公众号转载：请在文末添加文章链接 ---> </li>
           </ui>
         </div>
 
-        <div class="five wide column">
-          <img src="../static/images/wechat.jpg" th:src="@{/images/CodeKey.jpg}" title="扫码关注作者微信公众号" class="ui right floated rounded bordered image" style="width: 110px">
-        </div>
       </div>
     </div>
     <div  class="ui bottom attached segment" th:if="${blog.commentabled}">
