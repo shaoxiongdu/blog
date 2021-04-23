@@ -2,7 +2,7 @@
 
 ## 一.博客在线预览
 
-<a href='http://blog.shaoxiongdu.top' target ='_blank' >http://blog.ShaoxiongDu.top </a>
+<a href='http://www.shaoxiongdu.cn' target ='_blank' >www.shaoxiongdu.cn</a>
 
 
 ## 二.博客截图预览 &nbsp;&nbsp;&nbsp;
