@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="大幅度调整项目架构，更新备案号，修复若干BUG">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="大幅度调整项目架构，更新备案号，修复若干BUG" />
     <list id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="优化用户体验" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1103,7 +1100,7 @@
       <workItem from="1618880672701" duration="757000" />
       <workItem from="1619179624805" duration="2659000" />
       <workItem from="1619183021066" duration="600000" />
-      <workItem from="1619339509383" duration="1605000" />
+      <workItem from="1619339509383" duration="1905000" />
     </task>
     <task id="LOCAL-00036" summary="大幅度调整项目架构">
       <created>1617799652422</created>
@@ -1161,7 +1158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619340738203</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="大幅度调整项目架构，更新备案号，修复若干BUG">
+      <created>1619341130751</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1619341130751</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
