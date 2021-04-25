@@ -1103,7 +1103,7 @@
       <workItem from="1618880672701" duration="757000" />
       <workItem from="1619179624805" duration="2659000" />
       <workItem from="1619183021066" duration="600000" />
-      <workItem from="1619339509383" duration="943000" />
+      <workItem from="1619339509383" duration="1605000" />
     </task>
     <task id="LOCAL-00036" summary="大幅度调整项目架构">
       <created>1617799652422</created>
@@ -1147,7 +1147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619182048981</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="大幅度调整项目架构，更新备案号，修复若干BUG">
+      <created>1619340490245</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1619340490245</updated>
+    </task>
+    <task id="LOCAL-00043" summary="大幅度调整项目架构，更新备案号，修复若干BUG">
+      <created>1619340738203</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1619340738203</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
