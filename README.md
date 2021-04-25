@@ -4,25 +4,19 @@
 
 >### <a href="http://www.shaoxiongdu.cn" target ="_blank" >www.shaoxiongdu.cn </a>
 
-## 二.博客截图预览 &nbsp;&nbsp;&nbsp;
+## 二.博客截图预览
 
 #### 博客首页预览
 
-![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205111437.png)
+![image-20210425165015860](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425165015860.png)
 
 #### 博客详情预览
 
-![image-20210407205125008](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205125008.png)
-
-
+![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425164916526.png)
 
 #### 博客底部栏预览
 
-![image-20210407205240325](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205240325.png)
-
-#### 关于页面预览
-
-![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205220706.png)
+![image-20210425164932099](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425164932099.png)
 
 ## 三.项目选型
 
@@ -78,13 +72,12 @@
 
 ## 六.项目反馈及改进
 
-> 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.
-> 并且将您添加到项目贡献者列表中.
+### 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.并且将您添加到项目贡献者列表中.
 
 ## 七.支持我
 
-> ### 目前为止，我还没毕业，大三。
+> ### 目前为止，我还没毕业，大三。正在为早餐发愁
 > ### 项目开发，云服务器，域名注册等支出都需要花自己的生活费
-> ### 如果此项目对您的学习或者开发有帮助的话，欢迎扫码请我吃一顿早饭，我将万分感谢！
+> ### 如果此项目对您的学习或者开发有帮助的话，欢迎扫码请我吃一顿早餐，我将万分感谢！
 
 ![wxPraiseQR](https://gitee.com/ShaoxiongDu/imageBed/raw/master/wxPraiseQR.png)
