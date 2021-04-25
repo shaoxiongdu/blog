@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="大幅度调整项目架构">
-      <change afterPath="$PROJECT_DIR$/log/blog.log.2021-04-07.0" afterDir="false" />
+    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="大幅度调整项目架构，更新备案号，修复若干BUG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-03-21.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-03-23.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/tags-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="优化用户体验" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1120,7 +1101,9 @@
       <workItem from="1617800959649" duration="165000" />
       <workItem from="1617889985713" duration="39000" />
       <workItem from="1618880672701" duration="757000" />
-      <workItem from="1619179624805" duration="1487000" />
+      <workItem from="1619179624805" duration="2659000" />
+      <workItem from="1619183021066" duration="600000" />
+      <workItem from="1619339509383" duration="943000" />
     </task>
     <task id="LOCAL-00036" summary="大幅度调整项目架构">
       <created>1617799652422</created>
@@ -1150,7 +1133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617800764659</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="大幅度调整项目架构，更新备案号，修复若干BUG">
+      <created>1619181457594</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1619181457594</updated>
+    </task>
+    <task id="LOCAL-00041" summary="大幅度调整项目架构，更新备案号，修复若干BUG">
+      <created>1619182048981</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1619182048981</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1296,7 +1293,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="项目部署完成" />
     <MESSAGE value="修复支付宝打赏功能,完善页面体验" />
     <MESSAGE value="修复主页导航问题以及后台页面的显示问题" />
     <MESSAGE value="新增网站浏览量统计功能 修复主页logo超链接bug" />
@@ -1321,7 +1317,8 @@
     <MESSAGE value="修复管理员头像404错误,优化readme文件" />
     <MESSAGE value="优化用户体验" />
     <MESSAGE value="大幅度调整项目架构" />
-    <option name="LAST_COMMIT_MESSAGE" value="大幅度调整项目架构" />
+    <MESSAGE value="大幅度调整项目架构，更新备案号，修复若干BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="大幅度调整项目架构，更新备案号，修复若干BUG" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

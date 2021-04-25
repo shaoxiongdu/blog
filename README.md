@@ -1,15 +1,14 @@
-# <center>SpringBoot个人博客</center>
+# <center>一个基于SpringBoot简洁优雅的个人博客</center>
 
 ## 一.博客在线预览
 
-<a href='http://www.shaoxiongdu.cn' target ='_blank' >www.shaoxiongdu.cn</a>
-
+>### <a href="http://www.shaoxiongdu.cn" target ="_blank" >www.shaoxiongdu.cn </a>
 
 ## 二.博客截图预览 &nbsp;&nbsp;&nbsp;
 
 #### 博客首页预览
 
-![image-20210407205111437](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205111437.png)
+![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210407205111437.png)
 
 #### 博客详情预览
 
@@ -38,8 +37,6 @@
 | 数据库驱动       | MySQL                | 5.1.44        |
 
 ## 四.运行教程
-
-
 
 #### 1.导入项目
 
@@ -83,3 +80,11 @@
 
 > 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.
 > 并且将您添加到项目贡献者列表中.
+
+## 七.支持我
+
+> ### 目前为止，我还没毕业，大三。
+> ### 项目开发，云服务器，域名注册等支出都需要花自己的生活费
+> ### 如果此项目对您的学习或者开发有帮助的话，欢迎扫码请我吃一顿早饭，我将万分感谢！
+
+![wxPraiseQR](https://gitee.com/ShaoxiongDu/imageBed/raw/master/wxPraiseQR.png)
