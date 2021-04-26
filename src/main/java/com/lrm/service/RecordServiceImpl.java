@@ -46,7 +46,13 @@ public class RecordServiceImpl implements RecordService {
 
             String result = HttpClient.doGet(getAddressByIpRequestUrl);
 
-            record.setAddress(result.substring(result.indexOf(":")+1,result.length()-1));
+            if(result != null){
+                record.setAddress(result.substring(result.indexOf(":")+1,result.length()-1));
+            }else {
+                record.setAddress("未知");
+            }
+
+
 
             Record saveRecord =  recordRepository.save(record);
 
