@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="大幅度调整项目架构，更新备案号，修复若干BUG">
+    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="修复通过IP地址获取地区的空指针异常问题">
+      <change afterPath="$PROJECT_DIR$/log/blog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Github提交443" beforeDir="false" afterPath="$PROJECT_DIR$/help/Github提交443" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-03-26.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-03-29.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-03-31.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-04-07.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/service/RecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/RecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/阿里云开启80端口.txt" beforeDir="false" afterPath="$PROJECT_DIR$/help/阿里云开启80端口.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/help/Github提交443" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/help/阿里云开启80端口.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <list id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="优化用户体验" />
     <option name="SHOW_DIALOG" value="false" />
@@ -354,6 +350,7 @@
       <recent name="C:\Users\ShaoxiongDu\OneDrive\Development\Java\blog\src\main\resources\templates\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JavaProject\blog\help" />
       <recent name="$PROJECT_DIR$/src/main/resources/i18n" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1113,7 +1110,9 @@
       <workItem from="1619339509383" duration="2392000" />
       <workItem from="1619342034546" duration="687000" />
       <workItem from="1619355220585" duration="642000" />
-      <workItem from="1619426848032" duration="1295000" />
+      <workItem from="1619426848032" duration="1464000" />
+      <workItem from="1619429790480" duration="32000" />
+      <workItem from="1619526792084" duration="882000" />
     </task>
     <task id="LOCAL-00036" summary="大幅度调整项目架构">
       <created>1617799652422</created>
@@ -1192,7 +1191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619341862393</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="修复通过IP地址获取地区的空指针异常问题">
+      <created>1619428188885</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1619428188886</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1338,7 +1344,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="修复支付宝打赏功能,完善页面体验" />
     <MESSAGE value="修复主页导航问题以及后台页面的显示问题" />
     <MESSAGE value="新增网站浏览量统计功能 修复主页logo超链接bug" />
     <MESSAGE value="新增主页二维码显示文本 修改主页封面源文件资源" />
@@ -1363,7 +1368,8 @@
     <MESSAGE value="优化用户体验" />
     <MESSAGE value="大幅度调整项目架构" />
     <MESSAGE value="大幅度调整项目架构，更新备案号，修复若干BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="大幅度调整项目架构，更新备案号，修复若干BUG" />
+    <MESSAGE value="修复通过IP地址获取地区的空指针异常问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复通过IP地址获取地区的空指针异常问题" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
