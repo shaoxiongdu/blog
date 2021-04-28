@@ -1,12 +1,12 @@
 ![template](https://gitee.com/ShaoxiongDu/imageBed/raw/master/template.jpg)
 
-一.项目预览
+## 一.项目预览
  
-### 1.博客在线预览
+ 1.博客在线预览
 
 >#### <a href="http://www.shaoxiongdu.cn" target ="_blank" >www.shaoxiongdu.cn </a>
 
-### 2.博客截图预览
+2.博客截图预览
 
 ![博客首页预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425165015860.png)
 
