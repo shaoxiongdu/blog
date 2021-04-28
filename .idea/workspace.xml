@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="修复通过IP地址获取地区的空指针异常问题">
-      <change afterPath="$PROJECT_DIR$/log/blog.log" afterDir="false" />
+    <list default="true" id="d342b711-d38f-4724-9382-5e1e8bbc03ef" name="数据库" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/help/Github提交443" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/help/阿里云开启80端口.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="优化用户体验" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1113,6 +1110,8 @@
       <workItem from="1619426848032" duration="1464000" />
       <workItem from="1619429790480" duration="32000" />
       <workItem from="1619526792084" duration="882000" />
+      <workItem from="1619600661178" duration="143000" />
+      <workItem from="1619601984099" duration="1045000" />
     </task>
     <task id="LOCAL-00036" summary="大幅度调整项目架构">
       <created>1617799652422</created>
@@ -1198,7 +1197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619428188886</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="update readme">
+      <created>1619600737042</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1619600737042</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update readme">
+      <created>1619600751753</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1619600751753</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1344,7 +1357,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="修复主页导航问题以及后台页面的显示问题" />
     <MESSAGE value="新增网站浏览量统计功能 修复主页logo超链接bug" />
     <MESSAGE value="新增主页二维码显示文本 修改主页封面源文件资源" />
     <MESSAGE value="新增功能:1.后台管理修改照片地址 2.博客介绍点击进入博客" />
@@ -1369,7 +1381,8 @@
     <MESSAGE value="大幅度调整项目架构" />
     <MESSAGE value="大幅度调整项目架构，更新备案号，修复若干BUG" />
     <MESSAGE value="修复通过IP地址获取地区的空指针异常问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复通过IP地址获取地区的空指针异常问题" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,18 +1,16 @@
-# <center>一个基于SpringBoot简洁优雅的个人博客</center>
+![template](https://gitee.com/ShaoxiongDu/imageBed/raw/master/template.jpg)
 
-## 一.博客在线预览
+一.项目预览
 
->### <a href="http://www.shaoxiongdu.cn" target ="_blank" >www.shaoxiongdu.cn </a>
+### 1.博客在线预览
 
-## 二.博客截图预览
+>#### <a href="http://www.shaoxiongdu.cn" target ="_blank" >www.shaoxiongdu.cn </a>
+
+### 2.博客截图预览
 
 ![博客首页预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425165015860.png)
 
-![博客详情页预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425164916526.png)
-
-![底部栏预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425164932099.png)
-
-## 三.项目选型
+## 二.项目选型
 
 | 个人博客         | 语言                 | 版本          |
 | ---------------- | -------------------- | ------------- |
@@ -24,7 +22,7 @@
 | 数据持久层       | SpringBootJPA        | 1.5.7.RELEASE |
 | 数据库驱动       | MySQL                | 5.1.44        |
 
-## 四.运行教程
+## 三.运行教程
 
 #### 1.导入项目
 
@@ -62,15 +60,15 @@
 
    *注: 项目端口号可在主配置文件中修改 默认为 80 端口
 
-## 五.部署教程
+## 四.部署教程
 
 详情见 [SpringBoot项目部署服务器教程](https://zhuanlan.zhihu.com/p/97787791)
 
-## 六.项目反馈及改进
+## 五.项目反馈及改进
 
-### 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.并且将您添加到项目贡献者列表中.
+ 如果您在学习或者部署本项目的时候遇到了任何问题，或者项目有任何可以改进的地方，欢迎提出issues,看到就会回馈.并且将您添加到项目贡献者列表中.
 
-## 七.参与贡献
+## 六.参与贡献
 
 1. Fork 本仓库
 
@@ -80,11 +78,11 @@
 
 4. 新建 Pull Request
 
-## 八.支持我
+## 七.支持我
 
-> ### 目前为止，我还没毕业，大三。正在为早餐发愁
-> ### 项目开发，云服务器，域名注册等支出都需要花自己的生活费
-> ### 如果此项目对您的学习有帮助的话
-> ### 欢迎扫码请我吃一顿早餐，我将万分感谢！
+> #### 目前为止，我还没毕业，大三。正在为早餐发愁
+> #### 项目开发，云服务器，域名注册等支出都需要花自己的生活费
+> #### 如果此项目对您的学习有帮助的话
+> #### 欢迎扫码请我吃一顿早餐，我将万分感谢！
 
 ![wxPraiseQR](https://gitee.com/ShaoxiongDu/imageBed/raw/master/wxPraiseQR.png)
