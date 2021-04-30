@@ -8,9 +8,9 @@
 
 2.博客截图预览
 
-![image-20210430180342704](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
+![首页截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
 
-![image-20210430180418127](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180418127.png)
+![关于我页面截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180418127.png)
 
 ## 二.项目选型
 
