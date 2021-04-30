@@ -10,8 +10,6 @@
 
 ![首页截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
 
-![关于我页面截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180418127.png)
-
 ## 二.项目选型
 
 | 个人博客         | 语言                 | 版本          |
