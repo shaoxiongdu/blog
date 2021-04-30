@@ -24,7 +24,7 @@
 
 ## 三.运行教程
 
-#### 1.导入项目
+#### 1.导入项目 [GitHub地址](https://github.com/shaoxiongdu/blog)
 
    Fork本项目,用IDEA新建项目，点击 Create Project For Version Control，复制项目github地址 粘贴到IDEA中的Git地址 选择　点击clone　等待项目下载即可
 
