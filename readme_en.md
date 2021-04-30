@@ -1,6 +1,6 @@
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
 
-> ### [English] [Chinese](readme.md)
+> ### [Chinese](readme.md) English
 > 
 ## 一.ProjectPreview
 
