@@ -10,7 +10,9 @@
 
 ![image-20210430180342704](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
 
-![image-20210430180418127](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180418127.png)二.项目选型
+![image-20210430180418127](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180418127.png)
+
+## 二.项目选型
 
 | 个人博客         | 语言                 | 版本          |
 | ---------------- | -------------------- | ------------- |
