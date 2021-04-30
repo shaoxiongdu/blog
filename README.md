@@ -8,13 +8,13 @@
 
 2.博客截图预览
 
-![博客首页预览](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210425165015860.png)
+![image-20210430180342704](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
 
-## 二.项目选型
+![image-20210430180418127](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180418127.png)二.项目选型
 
 | 个人博客         | 语言                 | 版本          |
 | ---------------- | -------------------- | ------------- |
-| 前端基本语言     | HTML_+CSS+JavaScript |               |
+| 前端基本语言     | HTML_+CSS+JavaScript | ——            |
 | 前端UI框架       | SemanticUI           | 2.2.4         |
 | 前端渲染模板引擎 | Themeleaf            | 2.1.5.RELEASE |
 | 后端框架         | SpringBoot           | 1.5.7.RELEASE |
