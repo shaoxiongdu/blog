@@ -1,5 +1,7 @@
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
 
+> ### 中文版 [英文版](readme_en.md)
+
 ## 一.项目预览
 
  1.博客在线预览
