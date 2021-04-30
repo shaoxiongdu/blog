@@ -46,3 +46,5 @@ Thumbs.db
 /.mvn/
 /mvnw.cmd
 /mvnw
+/.github/
+/log/
