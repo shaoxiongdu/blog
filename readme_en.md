@@ -50,7 +50,6 @@ In the background, add categories, tags, and blog content in turn. The blog home
 
 ### 7.customBlogAttributes
 
-
 The personal IP at the top and bottom of the page is src/main/resources/templates/_fragments.html 
 
 The template file at the top and bottom of the administrator is under the admin file _fragemnts.html
@@ -81,6 +80,6 @@ If you encounter any problems in learning or deploying this project, or if there
 > #### So far, I haven't graduated, junior. I'm worrying about breakfast
 > #### Project development, cloud server, domain name registration and other expenses need to spend their own living expenses
 > #### ifThisProjectIsHelpfulToYourStudy
-> ####Welcome to scan code and invite me to have breakfast. I will be very grateful!
+> #### Welcome to scan code and invite me to have breakfast. I will be very grateful!
 
 ![wxPraiseQR](https://gitee.com/ShaoxiongDu/imageBed/raw/master/wxPraiseQR.png)
