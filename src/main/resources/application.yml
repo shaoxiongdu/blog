@@ -2,7 +2,7 @@ spring:
   thymeleaf:
     mode: HTML
   profiles:
-    active: dev
+    active: prod
   messages:
     basename: i18n/messages
 
