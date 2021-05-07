@@ -38,6 +38,7 @@ public class IndexController {
     @Autowired
     private WebsiteInfoService websiteInfoService;
 
+
     @GetMapping("/")
     public String index(@PageableDefault(size = 10, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model,
@@ -48,9 +49,7 @@ public class IndexController {
         model.addAttribute("tags", tagService.listTag());
         model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(20));
         session.setAttribute("views",websiteInfoService.addOneForViews());
-        session.setAttribute("aboutMeImageUrl",websiteInfoService.getAboutMeImageUrl());
         session.setAttribute("topTitle",websiteInfoService.getTopTitle());
-        session.setAttribute("aboutMeContent",websiteInfoService.getAboutMeContent());
 
         //网站访问记录
         recordService.recording(httpServletRequest);

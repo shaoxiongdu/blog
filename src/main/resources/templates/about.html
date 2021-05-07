@@ -38,74 +38,77 @@
     <!--适配移动端-->
     <div class="ui container">
 
+
       <div class="ui stackable grid">
-        <div class="eleven wide column">
-          <div class="ui segment">
-            <img th:src="${session.aboutMeImageUrl}" align="center" class="ui rounded image">
-          </div>
-        </div>
+
+        <!--左侧-->
         <div class="five wide column">
+          <div class="ui segment">
+            <img th:src="${session.aboutMeImageUrl}" align="center"  class="ui rounded image">
+          </div>
+
+          <!--联系-->
+          <div class="ui attached bottom segment center aligned">
+            <a target="_blank" title="Github开源地址" href="https://github.com/shaoxiongdu" class="ui icon circular button">
+              <i class="github icon"></i>
+            </a>
+
+            <a target="_blank" title="BiliBili主页"  href="https://space.bilibili.com/175560067" class="ui icon circular button">
+              <i class="bitcoin icon"></i>
+            </a>
+
+            <a target="_blank" title="微博主页" href="https://weibo.com/7510528502/profile" class="ui icon circular button">
+              <i class="weibo icon"></i>
+            </a>
+
+            <a target="_blank" title="steam主页"  href="https://steamcommunity.com/profiles/76561198446690218/" class="ui icon circular button">
+              <i class="steam icon"></i>
+            </a>
+
+
+
+            <a target="_blank" title="给我发送邮件" href="mailto:shaoxiongdu.dev@gmail.com" class="ui icon circular button">
+              <i class="mail icon"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!--右侧-->
+        <div class="eleven wide column">
+          <!--顶部-->
           <div class="ui top attached segment">
-            <div class="center aligned ui header">关于作者</div>
+            <div class="center aligned ui header">杜少雄/男/22岁/山西太原/2022应届生</div>
             <div class="attached segment center aligned ui me-text">
-              <p th:utext="${session.aboutMeContent}">
-                  我是替换内容
-              </p>
+              <h3><p th:utext="${session.aboutMeContent}"></p></h3>
 
             </div>
             <div class="attached segment ui aligned">
 
-              <h3 align="center">保持独立思考,不卑不亢<br>活成自己想要的样子！</h3>
+              <h3 align="center">技能清单</h3>
 
-            <!--个人标签-->
-            <div class="attached segment ui aligned">
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>Java开发</h5></div>
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>数据库</h5></div>
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>SpringBoot</h5></div>
-              <div class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h5>敏捷开发</h5></div>
+             <!--个人标签-->
+              <div class="attached segment ui aligned" >
 
-
-            </div>
-
-            <!--联系-->
-            <div class="ui attached bottom segment center aligned">
-              <a target="_blank" title="Github开源地址" href="https://github.com/shaoxiongdu" class="ui icon circular button">
-                <i class="github icon"></i>
-              </a>
-
-              <a target="_blank" title="BiliBili主页"  href="https://space.bilibili.com/175560067" class="ui icon circular button">
-                <i class="bitcoin icon"></i>
-              </a>
-
-              <a target="_blank" title="微博主页" href="https://weibo.com/7510528502/profile" class="ui icon circular button">
-                <i class="weibo icon"></i>
-              </a>
-
-              <a target="_blank" title="steam主页"  href="https://steamcommunity.com/profiles/76561198446690218/" class="ui icon circular button">
-                <i class="steam icon"></i>
-              </a>
-
-
-
-              <a target="_blank" title="给我发送邮件" href="mailto:shaoxiongdu.dev@gmail.com" class="ui icon circular button">
-                <i class="mail icon"></i>
-              </a>
+                  <!--循环取出技能清单-->
+                  <div th:each="skill:${session.skillList}" class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h4 th:text="${skill.getSkillName()}"></h4></div>
 
               </div>
 
-
-            </div>
+          </div>
 
           </div>
+
         </div>
 
-      <!--适配移动端结束-->
+      </div>
+
+      <!--适配移动端-->
     </div>
+
+    <!--中间内容-->
   </div>
-
-
-</div>
-
 
   <br>
   <!--底部footer-->

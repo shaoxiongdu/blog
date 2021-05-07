@@ -30,16 +30,16 @@
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
       <a href="http://www.shaoxiongdu.cn" target="_blank"><h2 class="ui teal header item">DSX_BLOG后台管理</h2></a>
-      <a href="#" th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>博客管理</a>
-      <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>分类管理</a>
-      <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签管理</a>
-      <a href="#" th:href="@{/admin/websiteInfo}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" setting icon"></i>网站设置</a>
-      <a href="#" th:href="@{/admin/websiteRecord}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" setting icon"></i>网站访问记录</a>
+      <a th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>博客管理</a>
+      <a th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>分类管理</a>
+      <a th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签管理</a>
+      <a th:href="@{/admin/websiteInfo}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" setting icon"></i>网站设置</a>
+      <a th:href="@{/admin/websiteRecord}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" setting icon"></i>网站访问记录</a>
       <div class="right m-item m-mobile-hide menu">
         <div class="ui dropdown  item">
           <div class="text">
-            <img class="ui avatar image" src="https://unsplash.it/100/100?image=1005" th:src="@{${session.user.avatar}}">
-            <span th:text="${session.user.nickname}">杜少雄</span>
+            <img class="ui avatar image"  th:src="@{${session.user.avatar}}">
+            <span th:text="${session.user.nickname}"></span>
           </div>
           <i class="dropdown icon"></i>
           <div class="menu">
