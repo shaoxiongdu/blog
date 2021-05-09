@@ -34,22 +34,16 @@
 
 ### 3.数据库导入相关
 
-   1. 生成表结构:
-      
-      新建一个名为blog的数据库,运行DB文件夹下的sql脚本,生成表结构。
+   新建一个名为blog的数据库,运行DB文件夹下的sql脚本,生成表结构。并插入数据。
 
-   2. 插入管理员数据: 
-      
-      修改blog_user.sql中的个人信息，字段见名知意，密码默认是1，如果要修改密码，需要使用util包下的MD5工具转化。
-      修改好全部信息之后运行脚本即可。
-      
 ### 4.配置数据库
 
    修改-prod配置文件中的数据库信息,确保连接的是自己的blog数据库,修改pop文件中的mysql驱动版本。
 
 ### 5.访问博客
 
-   启动springboot项目,博客首页访问地址: localhost  博客后台登陆页面访问地址 localhost/admin 默认管理员账号admin,密码为1
+   启动springboot项目,博客首页访问地址: localhost  博客后台登陆页面访问地址 localhost/admin 
+   默认管理员账号admin,密码为dsx05117218    注：数据库中存储的是MD5加密之后的密码，修改需要注意。 
 
 ### 6.添加数据
 
@@ -72,7 +66,7 @@
 
     - 关于作者文本由t_website_info表中的aboutMeContent字段维护
     - 照片在线地址可在管理员后台中修改
-    
+      idea incomplete ProjectFile Display
   - #### 顶部标题
 
     - 可在管理员后台中修改
