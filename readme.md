@@ -66,7 +66,7 @@
 
     - 底部模板文件 src/main/resources/templates/_fragments.html
 
-    - 管理员页面顶部底部模板文件 src/main/resources/templates/admin/_fragemnts.html
+    - 管理员页面顶部底部模板文件 src/main/resources/templates/admin/_fragments.html
 
   - #### 【关于我】页面
 
