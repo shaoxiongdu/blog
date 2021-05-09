@@ -16,7 +16,7 @@
 | ---------------- | -------------------- | ------------- |
 | 前端基本语言     | HTML_+CSS+JavaScript | ——            |
 | 前端UI框架       | SemanticUI           | 2.2.4         |
-| 前端渲染模板引擎 | Themeleaf            | 2.1.5.RELEASE |
+| 前端渲染模板引擎 | Thymeleaf            | 2.1.5.RELEASE |
 | 后端框架         | SpringBoot           | 1.5.7.RELEASE |
 | JDK版本          | Java                 | 1.8           |
 | 数据持久层       | SpringBootJPA        | 1.5.7.RELEASE |
