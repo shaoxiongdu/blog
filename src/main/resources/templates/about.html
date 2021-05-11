@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
   <link rel="stylesheet" href="../static/css/me.css">
 </head>
+
+<!--随机古诗词-->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <body>
 
   <!--导航-->
@@ -79,14 +82,11 @@
         <div class="eleven wide column">
           <!--顶部-->
           <div class="ui top attached segment">
-            <div class="center aligned ui header">杜少雄/男/22岁/山西太原/2022应届生</div>
-            <div class="attached segment center aligned ui me-text">
-              <h3><p th:utext="${session.aboutMeContent}"></p></h3>
+            <div class="center aligned ui header" th:utext="${session.aboutMeContent}"></div>
 
-            </div>
             <div class="attached segment ui aligned">
 
-              <h3 align="center">技能清单</h3>
+              <h3 align="center"><span id="jinrishici-sentence">正在加载今日诗词...</span></h3>
 
              <!--个人标签-->
               <div class="attached segment ui aligned" >
@@ -126,5 +126,6 @@
     });
 
   </script>
+
 </body>
 </html>

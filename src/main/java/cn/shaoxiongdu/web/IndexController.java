@@ -1,5 +1,6 @@
 package cn.shaoxiongdu.web;
 
+import cn.shaoxiongdu.po.FriendLink;
 import cn.shaoxiongdu.service.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * Created by dsx on 2017/10/13.
@@ -38,6 +40,9 @@ public class IndexController {
     @Autowired
     private WebsiteInfoService websiteInfoService;
 
+    @Autowired
+    private FriendLinkService friendLinkService;
+
 
     @GetMapping("/")
     public String index(@PageableDefault(size = 10, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
@@ -47,9 +52,10 @@ public class IndexController {
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listType());
         model.addAttribute("tags", tagService.listTag());
-        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(20));
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(5));
         session.setAttribute("views",websiteInfoService.addOneForViews());
         session.setAttribute("topTitle",websiteInfoService.getTopTitle());
+        model.addAttribute("friendLinks",friendLinkService.getAll());
 
         //网站访问记录
         recordService.recording(httpServletRequest);
@@ -75,7 +81,7 @@ public class IndexController {
 
     @GetMapping("/footer/newblog")
     public String newblogs(Model model) {
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(6));
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(5));
         return "_fragments :: newblogList";
     }
 

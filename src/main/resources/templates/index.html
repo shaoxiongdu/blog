@@ -149,6 +149,23 @@
             </div>
           </div>
 
+          <!--友链-->
+          <div class="ui segments">
+            <div class="ui secondary segment">
+              <div class="ui two column grid">
+                <div class="column">
+                 <a href="#" title="如何加入? 扫描底部二维码，给我的公众号留言或者加我个人微信。看到就会回复。"> <h4>友情链接</h4></a>
+                </div>
+              </div>
+            </div>
+            <div class="ui teal segment">
+              <div class="ui fluid vertical menu" >
+                <a th:each="link:${friendLinks}" th:href="${link.link}" th:text="${link.name}" th:title="${link.getDescription()}" target="_blank" class="ui teal basic  item" >
+                </a>
+              </div>
+            </div>
+          </div>
+
           <!--最新推荐-->
           <div class="ui segments m-margin-top-large">
             <div class="ui secondary segment ">
@@ -158,7 +175,6 @@
               <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}"></a>
             </div>
           </div>
-
 
         </div>
 
