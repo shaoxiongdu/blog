@@ -85,6 +85,15 @@ create table t_skill
     skill varchar(255) null
 );
 
+create table t_friend_link
+(
+    id          bigint auto_increment
+        primary key,
+    description varchar(255) null,
+    link        varchar(255) null,
+    name        varchar(255) null
+);
+
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', '独立思考，不卑不亢。 活成自己想要的样子！');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeImageUrl', 'https://gitee.com/ShaoxiongDu/imageBed/raw/master/%E5%A4%B4%E5%83%8F.jpg');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('topTitle', '<i class="icon paper plane outline"></i>DSX_BLOG');

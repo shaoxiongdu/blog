@@ -2,4 +2,4 @@
 网站名称：少雄博客 
 网站地址：http://www.shaoxiongdu.cn 
 网站描述：一个即将秃顶的计科狗🐕 
-网站头像：https://gitee.com/ShaoxiongDu/imageBed/raw/master/%E5%A4%B4%E5%83%8F.jpg 
+网站头像：https://gitee.com/ShaoxiongDu/imageBed/raw/master/logo.jpg
