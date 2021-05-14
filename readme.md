@@ -1,4 +1,6 @@
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
+## Star 曲线
+[![Stargazers over time](https://starchart.cc/shaoxiongdu/blog.svg)](https://github.com/shaoxiongdu/blog)
 
 ## 一.项目预览
 
