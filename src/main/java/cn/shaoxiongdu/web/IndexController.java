@@ -45,14 +45,14 @@ public class IndexController {
 
 
     @GetMapping("/")
-    public String index(@PageableDefault(size = 10, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String index(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model,
                         HttpSession session,
                         HttpServletRequest httpServletRequest) {
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listType());
         model.addAttribute("tags", tagService.listTag());
-        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(5));
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(6));
         session.setAttribute("views",websiteInfoService.addOneForViews());
         session.setAttribute("topTitle",websiteInfoService.getTopTitle());
         model.addAttribute("friendLinks",friendLinkService.getAll());
@@ -69,7 +69,7 @@ public class IndexController {
                          @RequestParam String query, Model model) {
         model.addAttribute("page", blogService.listBlog("%"+query+"%", pageable));
         model.addAttribute("query", query);
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(5));
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(6));
         return "search";
     }
 
@@ -81,7 +81,7 @@ public class IndexController {
 
     @GetMapping("/footer/newblog")
     public String newblogs(Model model) {
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(5));
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(6));
         return "_fragments :: newblogList";
     }
 

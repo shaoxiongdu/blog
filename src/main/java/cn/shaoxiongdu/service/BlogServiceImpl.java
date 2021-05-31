@@ -126,6 +126,11 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog saveBlog(Blog blog) {
         if (blog.getId() == null) {
+
+            /*默认为原创*/
+            if(Objects.equals(null,blog.getFlag())){
+                blog.setFlag("原创");
+            }
             blog.setCreateTime(new Date());
             blog.setUpdateTime(new Date());
             blog.setViews(0);

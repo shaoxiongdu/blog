@@ -38,9 +38,9 @@ public class RecordServiceImpl implements RecordService {
             record.setIp(ip);
             record.setLastVisitTime(new Date());
             record.setTotalNumberOfVisits(new Long(1));
-            String getAddressByIpRequestUrl = "https://www.maitube.com/ip/?ip="+record.getIp();
 
-            String result = HttpClient.doGet(getAddressByIpRequestUrl);
+            //获取IP地址位置信息
+            String result = HttpClient.doGet(record.getIp());
 
             if(result != null){
                 record.setAddress(result.substring(result.indexOf(":")+1,result.length()-1));
@@ -64,6 +64,7 @@ public class RecordServiceImpl implements RecordService {
 
             return;
         }else {
+
             record.setLastVisitTime(new Date());
             record.setTotalNumberOfVisits(record.getTotalNumberOfVisits()+1);
             recordRepository.save(record);

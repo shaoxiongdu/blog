@@ -49,7 +49,7 @@
 
       <div class="ui attached segment m-padded-tb-large">
         <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"  class="ui basic left pointing large label m-margin-tb-tiny" th:classappend="${tag.id==activeTagId} ? 'teal'" th:each="tag : ${tags}">
-          <span th:text="${tag.name}">方法论</span> <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
+          <span th:text="${tag.name}"></span> <div class="detail" th:text="${#arrays.length(tag.blogs)}"></div>
         </a>
       </div>
 
