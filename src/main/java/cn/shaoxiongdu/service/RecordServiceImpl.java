@@ -1,6 +1,6 @@
 package cn.shaoxiongdu.service;
 
-import cn.shaoxiongdu.util.HttpClient;
+import cn.shaoxiongdu.util.BaiduApi;
 import cn.shaoxiongdu.util.IPUtils;
 import cn.shaoxiongdu.dao.RecordRepository;
 import cn.shaoxiongdu.po.Record;
@@ -38,17 +38,7 @@ public class RecordServiceImpl implements RecordService {
             record.setIp(ip);
             record.setLastVisitTime(new Date());
             record.setTotalNumberOfVisits(new Long(1));
-
-            //获取IP地址位置信息
-            String result = HttpClient.doGet(record.getIp());
-
-            if(result != null){
-                record.setAddress(result.substring(result.indexOf(":")+1,result.length()-1));
-            }else {
-                record.setAddress("未知");
-            }
-
-
+            record.setAddress(BaiduApi.getAddressByIp(record.getIp()));
 
             Record saveRecord =  recordRepository.save(record);
 

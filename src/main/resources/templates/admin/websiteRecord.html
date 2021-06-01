@@ -60,7 +60,7 @@
             <h3 class="ui header">访问记录</h3>
           </div>
           <div class="right aligned column">
-            <h3><span> 共 <h2 class="ui orange header m-inline-block " th:text="${recordListSize}"></h2>条数据</span></h3>
+            <h3><span> 共 <h2 class="ui orange header m-inline-block " th:text="${recordListSize}"></h2>条访问数据</span></h3>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
             <th>记录ID</th>
             <th>访问总次数</th>
             <th>IP地址</th>
-            <th>访问地区</th>
+            <th>地区</th>
             <th>上次访问时间</th>
           </tr>
           </thead>
@@ -82,7 +82,7 @@
             <td th:text="${record.totalNumberOfVisits}+'次'"></td>
             <td th:text="${record.ip}"></td>
             <td th:text="${record.address}"></td>
-            <td th:text="${#dates.format(record.lastVisitTime,'yyyy年MM月dd号  HH时mm分ss秒')}"></td>
+            <td th:text="${#dates.format(record.lastVisitTime,'yyyy-MM-dd  HH:mm:ss')}"></td>
           </tr>
           </tbody>
 
