@@ -7,6 +7,10 @@ import com.baidubce.http.HttpMethodName;
 import com.baidubce.model.ApiExplorerRequest;
 import com.baidubce.model.ApiExplorerResponse;
 
+
+/**
+ *  百度API接口
+ */
 public class BaiduApi {
 
     /**
@@ -17,9 +21,12 @@ public class BaiduApi {
     }
 
     /**
-     * 百度API AccessKey
+     * 百度API AccessKey 此处填写您自己的key 申请地址:
+     *
+     *  https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9
+     *
      */
-    private final static String ACCESS_KEY = "0962af51ad37430786a8723d9e018f71";
+    private final static String ACCESS_KEY = "";
 
     /**
      * 百度API SecretKey

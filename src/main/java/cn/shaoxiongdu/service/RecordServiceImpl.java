@@ -38,6 +38,8 @@ public class RecordServiceImpl implements RecordService {
             record.setIp(ip);
             record.setLastVisitTime(new Date());
             record.setTotalNumberOfVisits(new Long(1));
+
+            /*通过IP获取地址*/
             record.setAddress(BaiduApi.getAddressByIp(record.getIp()));
 
             Record saveRecord =  recordRepository.save(record);

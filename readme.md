@@ -10,11 +10,22 @@
 
 2.博客截图预览
 
+### 2.1. 首页
 ![首页截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
 
+### 2.2. 分类
 ![分类截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210517213428053.png)
 
+### 2.3. 关于我
 ![关于我页面截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210517213452098.png)
+
+### 2.4. 网站访问
+![登录管理页面](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210604135418865.png)
+
+### 2.5. 博客管理
+![博客管理页面](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210604135440292.png)
+   
+ .......
 
 ## 二.项目选型
 
@@ -58,7 +69,11 @@
 
 ### 7.注意事项
 
-   *注: 项目端口号可在主配置文件中修改，默认为 80 端口。
+   1. 项目端口号可在主配置文件中修改，默认为 80 端口。
+
+
+   2. 项目中使用了百度的IP查询地址API  如果您需要使用， 在 [百度API申请地址](https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9)
+中申请，然后将AccessKey，AppSecret填入工具类BaiduApi中即可
 
 ## 四.自定义博客属性
 
@@ -82,6 +97,7 @@
 ## 五.部署教程
 
 详情见 [SpringBoot项目部署服务器教程](https://zhuanlan.zhihu.com/p/97787791)
+
 
 ## 六.项目反馈及改进（非常欢迎！）
 
