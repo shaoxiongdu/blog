@@ -29,7 +29,7 @@ public class BaiduApi {
     private final static String ACCESS_KEY = "";
 
     /**
-     * 百度API SecretKey
+     * 百度API SecretKey 此处填写您自己的key
      */
     private static String SECRET_KEY = "f3c38615a64c4a6cbdc48fe2717830bc";
 
