@@ -37,11 +37,11 @@
     <div class="ui inverted secondary stackable menu" style="font-size: 17px">
       <a href="http://www.shaoxiongdu.cn/admin/blogs/" target="_blank" ><h2 class="ui teal header item" th:utext="${session.topTitle}"></h2></a>
       <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'">首页</a>
-      <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"></i>分类</a>
-      <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"></i>标签</a>
-      <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"></i>关于我</a>
-      <a href="https://gitee.com/ShaoxiongDu/resume/blob/main/readme.md"  target="_blank"  class="m-item item m-mobile-hide" ></i>我的简历</a>
-      <a href="https://github.com/shaoxiongdu/blog" target="_blank"  class="m-item item m-mobile-hide"><i class="icon github"></i>项目开源</a>
+      <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'">分类</a>
+      <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'">标签</a>
+      <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'">关于我</a>
+
+      <!--搜索框-->
       <div class="right m-item item m-mobile-hide">
         <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
           <div class="ui icon inverted transparent input m-margin-tb-tiny">
@@ -50,6 +50,14 @@
           </div>
         </form>
       </div>
+
+      <!--github开源地址-->
+      <div>
+        <a href="https://github.com/shaoxiongdu/blog" target="_blank"  class="right m-item item m-mobile-hide "><i class="icon big github"></i></a>
+
+      </div>
+
+
     </div>
   </div>
   <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
@@ -121,7 +129,7 @@
 
     <!--ICP备案号-->
     <div class="ui inverted list link">
-      <p style="color: #AAAAAA;font-size: 17px" >程序员不是天生的 | @版权所有 © 杜少雄 2021 保留所有权利<a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>&nbsp;&nbsp;&nbsp;晋ICP备2020012997号-2</a> <p>
+      <p style="color: #AAAAAA;font-size: 17px" >程序员不是天生的 | 2021 版权所有 @ 杜少雄 保留所有权利<a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>&nbsp;&nbsp;&nbsp;晋ICP备2020012997号-2</a> <p>
 
 
       <!--访问量数据-->

@@ -13,6 +13,13 @@ import com.baidubce.model.ApiExplorerResponse;
  */
 public class BaiduApi {
 
+    public static void main(String[] args) {
+
+        String addressByIp = getAddressByIp("123.56.54.169");
+
+
+    }
+
     /**
      * 构造方法私有化 防止外部创建对象
      */
@@ -26,12 +33,12 @@ public class BaiduApi {
      *  https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9
      *
      */
-    private final static String ACCESS_KEY = "";
+    private final static String ACCESS_KEY = "0962af51ad37430786a8723d9e018f71";
 
     /**
      * 百度API SecretKey 此处填写您自己的key
      */
-    private static String SECRET_KEY = "f3c38615a64c4a6cbdc48fe2717830bc";
+    private static String SECRET_KEY = "";
 
     /**
      * 通过IP获取地址
@@ -41,7 +48,13 @@ public class BaiduApi {
     public static String getAddressByIp(String ip){
 
         /**
-         * 通过IP获取地址的百度API请求地址路径
+         * 未填写SECRET_KEY时，返回未知地址
+         * 阿斯蒂芬
+         */
+        if(SECRET_KEY.equals("")) return "未知";
+
+        /*
+          通过IP获取地址的百度API请求地址路径
          */
         final String requestPath = "http://ipapi.api.bdymkt.com/ip2location/retrieve";
 
