@@ -1,6 +1,18 @@
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
 
+<br>
+<div align="center">
+    <img src="https://img.shields.io/badge/后端框架-SpringBoot-blue">
+    <img src="https://img.shields.io/badge/数据源-SpringBootJPA-green">
+    <img src="https://img.shields.io/badge/数据库-MySQL-orange">
+    <img src="https://img.shields.io/badge/前端UI-SemanticUI-red">
 
+
+  <img src="https://visitor-badge.glitch.me/badge?page_id=shaoxiongdu.JVMStudy" >
+<br>
+<br>
+    <a href="https://shaoxiongdu.github.io/blog/" target="_blank">在线阅读文档</a>
+</div>
 
 ## Star 曲线
 [![Stargazers over time](https://starchart.cc/shaoxiongdu/blog.svg)](https://github.com/shaoxiongdu/blog)
