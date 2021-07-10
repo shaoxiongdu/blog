@@ -52,6 +52,7 @@ public class BaiduApi {
          * 阿斯蒂芬
          */
         if(SECRET_KEY.equals("")) return "未知";
+        if(ACCESS_KEY.equals("")) return "未知";
 
         /*
           通过IP获取地址的百度API请求地址路径
