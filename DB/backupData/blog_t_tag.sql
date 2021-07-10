@@ -1,6 +1,5 @@
 INSERT INTO blog.t_tag (id, name) VALUES (1, 'JAVA');
 INSERT INTO blog.t_tag (id, name) VALUES (2, '前端');
-INSERT INTO blog.t_tag (id, name) VALUES (3, '数据库');
 INSERT INTO blog.t_tag (id, name) VALUES (4, '计算机网络');
 INSERT INTO blog.t_tag (id, name) VALUES (5, 'MySQL');
 INSERT INTO blog.t_tag (id, name) VALUES (6, '其他');
