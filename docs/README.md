@@ -55,38 +55,27 @@
 
 ## 三.运行教程
 
-#### 1.导入项目 [GitHub地址](https://github.com/shaoxiongdu/blog) 
+#### 1.导入项目 [GitHub地址](https://github.com/shaoxiongdu/blog)
 
-   Fork本项目,用IDEA新建项目，点击 Create Project For Version Control，复制项目github地址 粘贴到IDEA中的Git地址输入框 ，点击clone　等待项目下载即可
+Fork本项目,用IDEA新建项目，点击 Create Project For Version Control，复制项目github地址 粘贴到IDEA中的Git地址输入框 ，点击clone　等待项目下载即可
 
-### 2.配置项目依赖
+### 2.数据库导入相关
 
-   部分IDEA版本需要在项目结构中指定JDK
+新建一个名为blog的数据库,选择UTF-8字符集，运行DB文件夹下的sql脚本,生成表结构。并插入数据。 修改-prod配置文件中的数据库信息
 
-### 3.数据库导入相关
+### 3.测试
 
-   新建一个名为blog的数据库,运行DB文件夹下的sql脚本,生成表结构。并插入数据。
+- 启动springboot项目,博客首页访问地址: localhost  博客后台登陆页面访问地址 localhost/admin
+- 默认管理员账号admin,密码为admin    注：数据库中存储的是MD5加密之后的密码，修改需要注意。
+- 后台依次添加分类，标签，博客内容  博客主页刷新即可更新。
 
-### 4.配置数据库
+### 4.注意事项
 
-   修改-prod配置文件中的数据库信息,确保连接的是自己的blog数据库,修改pop文件中的mysql驱动版本为您的数据库版本。
+1. 项目端口号可在主配置文件中修改，默认为 80 端口。
 
-### 5.访问博客
+2. 项目中使用了百度的IP查询地址API  如果您需要使用， 在 [百度API申请地址](https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9)
+   中申请，然后将AccessKey，AppSecret填入工具类BaiduApi中即可
 
-   启动springboot项目,博客首页访问地址: localhost  博客后台登陆页面访问地址 localhost/admin 
-   默认管理员账号admin,密码为dsx05117218    注：数据库中存储的是MD5加密之后的密码，修改需要注意。 
-
-### 6.添加数据
-
-   后台依次添加分类，标签，博客内容  博客主页刷新即可更新。
-
-### 7.注意事项
-
-   1. 项目端口号可在主配置文件中修改，默认为 80 端口。
-
-
-   2. 项目中使用了百度的IP查询地址API  如果您需要使用， 在 [百度API申请地址](https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9)
-中申请，然后将AccessKey，AppSecret填入工具类BaiduApi中即可
 
 ## 四.自定义博客属性
 

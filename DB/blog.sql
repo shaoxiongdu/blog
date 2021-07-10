@@ -93,10 +93,9 @@ create table t_friend_link
     link        varchar(255) null,
     name        varchar(255) null
 );
-
-INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', '独立思考，不卑不亢。 活成自己想要的样子！');
-INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeImageUrl', 'https://gitee.com/ShaoxiongDu/imageBed/raw/master/%E5%A4%B4%E5%83%8F.jpg');
+INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', '杜少雄/男/1999/2022应届/计算机科学与技术');
+INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeImageUrl', 'https://gitee.com/ShaoxiongDu/imageBed/raw/master/logo.jpg');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('topTitle', '<i class="icon paper plane outline"></i>DSX_BLOG');
-INSERT INTO blog.t_website_info (value_name, value) VALUES ('views', '13217');
+INSERT INTO blog.t_website_info (value_name, value) VALUES ('views', '14013');
 
-INSERT INTO blog.t_user (id, avatar, create_time, email, nickname, password, type, update_time, username) VALUES (1, 'http://p1.music.126.net/d5zrKbBHSO43vegQ9L5gjQ==/109951163963019922.jpg', '2021-03-26 13:44:05', 'shaoxiongdu.dev@gmail.com', '杜少雄', 'f6a21ca9788c9c4629f3233919a1feae', 1, '2021-03-26 13:44:23', 'admin');
+INSERT INTO blog.t_user (id, avatar, create_time, email, nickname, password, type, update_time, username) VALUES (1, 'http://p1.music.126.net/d5zrKbBHSO43vegQ9L5gjQ==/109951163963019922.jpg', '2021-03-26 13:44:05', 'your email', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '2021-03-26 13:44:23', 'admin');
