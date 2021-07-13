@@ -3,14 +3,14 @@
 <head th:replace="_fragments :: head(~{::title})">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>杜少雄的个人博客</title>
+  <title>写Bug的杜少雄</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
   <link rel="stylesheet" href="../static/css/me.css" >
 </head>
 <body>
 
   <!--导航-->
-  <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+  <nav th:replace="_fragments :: menu(1)" class=" layui-anim-up ui inverted attached segment m-padded-tb-mini m-shadow-small" >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
         <h2 class="ui teal header item">Blog</h2>
@@ -107,7 +107,7 @@
         <div class="five wide column">
 
           <!--分类-->
-          <div class="ui segments">
+          <div class="layui-anim-scaleSpring ui segments">
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
@@ -149,6 +149,16 @@
             </div>
           </div>
 
+          <!--最新推荐-->
+          <div class="ui segments m-margin-top-large">
+            <div class="ui secondary segment ">
+              <h4>最新推荐</h4>
+            </div>
+            <div class="ui segment" th:each="blog : ${recommendBlogs}">
+              <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}"></a>
+            </div>
+          </div>
+
           <!--友链-->
           <div class="ui segments">
             <div class="ui secondary segment">
@@ -165,17 +175,7 @@
               </div>
             </div>
           </div>
-          <!--
-            &lt;!&ndash;最新推荐&ndash;&gt;
-            <div class="ui segments m-margin-top-large">
-              <div class="ui secondary segment ">
-                <h4>最新推荐</h4>
-              </div>
-              <div class="ui segment" th:each="blog : ${recommendBlogs}">
-                <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}"></a>
-              </div>
-            </div>
-          -->
+
         </div>
 
       </div>

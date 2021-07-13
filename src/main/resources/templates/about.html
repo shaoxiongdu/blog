@@ -3,7 +3,7 @@
 <head  th:replace="_fragments :: head(~{::title})">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于站长</title>
+  <title>关于我</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
   <link rel="stylesheet" href="../static/css/me.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
 
   <!--导航-->
-  <nav th:replace="_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+  <nav th:replace="_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small " >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
         <h2 class="ui teal header item">Blog</h2>
@@ -41,13 +41,12 @@
     <!--适配移动端-->
     <div class="ui container">
 
-
       <div class="ui stackable grid">
 
         <!--左侧-->
         <div class="five wide column">
           <div class="ui segment">
-            <img th:src="${session.aboutMeImageUrl}" align="center"  class="ui rounded image">
+              <img th:src="${session.aboutMeImageUrl}" class="ui medium circular image" align="center" >
           </div>
 
           <!--联系-->

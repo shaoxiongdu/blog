@@ -45,14 +45,14 @@ public class IndexController {
 
 
     @GetMapping("/")
-    public String index(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String index(@PageableDefault(size = 8, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model,
                         HttpSession session,
                         HttpServletRequest httpServletRequest) {
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listType());
         model.addAttribute("tags", tagService.listTag());
-        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(6));
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(5));
         session.setAttribute("views",websiteInfoService.addOneForViews());
         session.setAttribute("topTitle",websiteInfoService.getTopTitle());
         model.addAttribute("friendLinks",friendLinkService.getAll());

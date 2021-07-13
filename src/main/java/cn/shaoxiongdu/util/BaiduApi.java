@@ -51,8 +51,8 @@ public class BaiduApi {
          * 未填写SECRET_KEY时，返回未知地址
          * 阿斯蒂芬
          */
-        if(SECRET_KEY.equals("")) return "未知";
-        if(ACCESS_KEY.equals("")) return "未知";
+        if( ACCESS_KEY == null || "".equals(ACCESS_KEY)) return "未知";
+        if( SECRET_KEY == null || "".equals(SECRET_KEY)) return "未知";
 
         /*
           通过IP获取地址的百度API请求地址路径
