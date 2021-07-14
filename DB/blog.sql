@@ -60,8 +60,7 @@ create table t_blog_tags
 
 create table t_comment
 (
-    id bigint auto_increment
-        primary key,
+    id bigint auto_increment primary key,
     admin_comment bit not null,
     avatar varchar(255) null,
     content varchar(255) null,
@@ -80,22 +79,24 @@ create table t_website_info
 
 create table t_skill
 (
-    id  bigint auto_increment
-        primary key,
+    id  bigint auto_increment primary key,
     skill varchar(255) null
 );
 
 create table t_friend_link
 (
-    id          bigint auto_increment
-        primary key,
+    id          bigint auto_increment primary key,
     description varchar(255) null,
     link        varchar(255) null,
     name        varchar(255) null
 );
-INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', '杜少雄/男/1999/2022应届/计算机科学与技术');
+/*插入网站信息数据*/
+INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', 'about me something ');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeImageUrl', 'https://gitee.com/ShaoxiongDu/imageBed/raw/master/logo.jpg');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('topTitle', '<i class="icon paper plane outline"></i>DSX_BLOG');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('views', '14013');
 
+/**
+  插入管理员数据
+ */
 INSERT INTO blog.t_user (id, avatar, create_time, email, nickname, password, type, update_time, username) VALUES (1, 'http://p1.music.126.net/d5zrKbBHSO43vegQ9L5gjQ==/109951163963019922.jpg', '2021-03-26 13:44:05', 'your email', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '2021-03-26 13:44:23', 'admin');
