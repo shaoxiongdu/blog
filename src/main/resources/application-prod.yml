@@ -14,5 +14,3 @@ logging:
     root: error
     com.lrm: error
   file: log/blog.log
-
-
