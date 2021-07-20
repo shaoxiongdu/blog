@@ -7,4 +7,4 @@
 - 美观，开源
 
 [GitHub](https://github.com/shaoxiongdu/blog)
-[快速开始](/?id=star曲线)
+[快速开始](/?id=一.项目预览)

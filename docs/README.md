@@ -10,10 +10,6 @@
 
 </div>
 
-## star曲线
-
-[![Stargazers over time](https://starchart.cc/shaoxiongdu/blog.svg)](https://github.com/shaoxiongdu/blog)
-
 ## 一.项目预览
 
 ### 1.博客在线预览
