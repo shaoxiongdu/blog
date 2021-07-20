@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shaoxiongdu.dao.TBlogDao">
+
+    <resultMap type="com.shaoxiongdu.entity.TBlog" id="TBlogMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="appreciation" column="appreciation" jdbcType="VARCHAR"/>
+        <result property="commentabled" column="commentabled" jdbcType="VARCHAR"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="firstPicture" column="first_picture" jdbcType="VARCHAR"/>
+        <result property="flag" column="flag" jdbcType="VARCHAR"/>
+        <result property="published" column="published" jdbcType="VARCHAR"/>
+        <result property="recommend" column="recommend" jdbcType="VARCHAR"/>
+        <result property="shareStatement" column="share_statement" jdbcType="VARCHAR"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="views" column="views" jdbcType="INTEGER"/>
+        <result property="typeId" column="type_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TBlogMap">
+        select id,
+               appreciation,
+               commentabled,
+               content,
+               create_time,
+               description,
+               first_picture,
+               flag,
+               published,
+               recommend,
+               share_statement,
+               title,
+               update_time,
+               views,
+               type_id,
+               user_id
+        from blog.t_blog
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="TBlogMap">
+        select id,
+               appreciation,
+               commentabled,
+               content,
+               create_time,
+               description,
+               first_picture,
+               flag,
+               published,
+               recommend,
+               share_statement,
+               title,
+               update_time,
+               views,
+               type_id,
+               user_id
+        from blog.t_blog limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TBlogMap">
+        select
+        id, appreciation, commentabled, content, create_time, description, first_picture, flag, published, recommend,
+        share_statement, title, update_time, views, type_id, user_id
+        from blog.t_blog
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="appreciation != null">
+                and appreciation = #{appreciation}
+            </if>
+            <if test="commentabled != null">
+                and commentabled = #{commentabled}
+            </if>
+            <if test="content != null">
+                and content = #{content}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="description != null and description != ''">
+                and description = #{description}
+            </if>
+            <if test="firstPicture != null and firstPicture != ''">
+                and first_picture = #{firstPicture}
+            </if>
+            <if test="flag != null and flag != ''">
+                and flag = #{flag}
+            </if>
+            <if test="published != null">
+                and published = #{published}
+            </if>
+            <if test="recommend != null">
+                and recommend = #{recommend}
+            </if>
+            <if test="shareStatement != null">
+                and share_statement = #{shareStatement}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+            <if test="views != null">
+                and views = #{views}
+            </if>
+            <if test="typeId != null">
+                and type_id = #{typeId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into blog.t_blog(appreciation, commentabled, content, create_time, description, first_picture, flag,
+                                published, recommend, share_statement, title, update_time, views, type_id, user_id)
+        values (#{appreciation}, #{commentabled}, #{content}, #{createTime}, #{description}, #{firstPicture}, #{flag},
+                #{published}, #{recommend}, #{shareStatement}, #{title}, #{updateTime}, #{views}, #{typeId}, #{userId})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into blog.t_blog(appreciation, commentabled, content, create_time, description, first_picture, flag,
+        published, recommend, share_statement, title, update_time, views, type_id, user_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.appreciation}, #{entity.commentabled}, #{entity.content}, #{entity.createTime},
+            #{entity.description}, #{entity.firstPicture}, #{entity.flag}, #{entity.published}, #{entity.recommend},
+            #{entity.shareStatement}, #{entity.title}, #{entity.updateTime}, #{entity.views}, #{entity.typeId},
+            #{entity.userId})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into blog.t_blog(appreciation, commentabled, content, create_time, description, first_picture, flag,
+        published, recommend, share_statement, title, update_time, views, type_id, user_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.appreciation}, #{entity.commentabled}, #{entity.content}, #{entity.createTime},
+            #{entity.description}, #{entity.firstPicture}, #{entity.flag}, #{entity.published}, #{entity.recommend},
+            #{entity.shareStatement}, #{entity.title}, #{entity.updateTime}, #{entity.views}, #{entity.typeId},
+            #{entity.userId})
+        </foreach>
+        on duplicate key update
+        appreciation = values(appreciation) , commentabled = values(commentabled) , content = values(content) ,
+        create_time = values(create_time) , description = values(description) , first_picture = values(first_picture) ,
+        flag = values(flag) , published = values(published) , recommend = values(recommend) , share_statement =
+        values(share_statement) , title = values(title) , update_time = values(update_time) , views = values(views) ,
+        type_id = values(type_id) , user_id = values(user_id)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update blog.t_blog
+        <set>
+            <if test="appreciation != null">
+                appreciation = #{appreciation},
+            </if>
+            <if test="commentabled != null">
+                commentabled = #{commentabled},
+            </if>
+            <if test="content != null">
+                content = #{content},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="firstPicture != null and firstPicture != ''">
+                first_picture = #{firstPicture},
+            </if>
+            <if test="flag != null and flag != ''">
+                flag = #{flag},
+            </if>
+            <if test="published != null">
+                published = #{published},
+            </if>
+            <if test="recommend != null">
+                recommend = #{recommend},
+            </if>
+            <if test="shareStatement != null">
+                share_statement = #{shareStatement},
+            </if>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="views != null">
+                views = #{views},
+            </if>
+            <if test="typeId != null">
+                type_id = #{typeId},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from blog.t_blog
+        where id = #{id}
+    </delete>
+
+</mapper>
+

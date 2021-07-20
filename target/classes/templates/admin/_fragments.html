@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+
+  <!--百度统计-->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f6089b5b5176e6d8e868f0e4b3cc0168";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:replace="${title}"></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+  <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+
+
+
+<body>
+
+<!--导航-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+  <div class="ui container">
+    <div class="ui inverted secondary stackable menu">
+      <a href="http://www.shaoxiongdu.cn" target="_blank"><h2 class="ui teal header item">DSX_BLOG后台管理</h2></a>
+      <a th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>博客</a>
+      <a th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>分类</a>
+      <a th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签</a>
+      <a th:href="@{/admin/websiteInfo}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" setting icon"></i>设置</a>
+      <a th:href="@{/admin/websiteRecord}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" setting icon"></i>访问记录</a>
+      <div class="right m-item m-mobile-hide menu">
+        <div class="ui dropdown  item">
+          <div class="text">
+            <img class="ui avatar image"  th:src="@{${session.user.avatar}}">
+            <span th:text="${session.user.nickname}"></span>
+          </div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+    <i class="sidebar icon"></i>
+  </a>
+</nav>
+
+<!--底部footer-->
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+  <div class="ui center aligned container">
+
+
+    <div class="ui inverted divided stackable grid">
+
+
+      <!--个人说明-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini">BLOG</h4>
+        <div class="ui inverted list link">
+          <p class="item">每个人都有属于自己的一片森林</p>
+          <p class="item">也许我们从来不曾去过</p>
+          <p class="item">但它一直在那里</p>
+          <p class="item">总会在那里</p>
+        </div>
+      </div>
+
+
+      <!--推荐博客-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini" >最新推荐</h4>
+        <div id="newblog-container">
+          <div class="ui inverted link list" th:fragment="newblogList">
+            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}"></a>
+          </div>
+        </div>
+      </div>
+
+      <!--联系作者-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini">联系博主</h4>
+        <div class="ui inverted list link">
+          <p>
+            <a target="_blank" style="color: #888888" title="添加我的QQ" href="http://wpa.qq.com/msgrd?v=3&uin=740593369&site=qq&menu=yes" >QQ:740593369</a>
+          </p>
+          <p></p>
+          <p class="item">微信:15603430511</p>
+          <p>
+            <a target="_blank" style="color: #888888" title="我的Github" href="https://github.com/shaoxiongdu" >GitHub:ShaoxiongDu</a>
+          </p>
+          <p>
+            <a target="_blank" style="color: #888888" title="给我发送邮件" href="mailto:email@shaoxiongdu.cn" >邮箱: email@shaoxiongdu.cn</a>
+          </p>
+        </div>
+      </div>
+
+      <!--微信二维码-->
+      <div class="four wide column">
+        <h4 class="ui inverted header me-opacity-mini" >更多开源项目</h4>
+        <div class="ui inverted link list">
+
+          <!--<a class="item" href="#" th:href="@{/about}"><img th:src="@{/images/wechat.jpg}"   class="ui rounded image"  style="width: 110px"></a>-->
+          <a href="#"><img src="http://www.gitee.com/ShaoxiongDu/imageBed/raw/master/GithubQR.jpg" style="width: 110px" title="持续分享更多好玩，有趣，又沙雕的开源项目，欢迎关注！"></a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ui inverted section divider"></div>
+
+    <!--ICP备案号-->
+    <div class="ui inverted list link">
+      <p style="color: #AAAAAA;font-size: 17px" >程序员不是天生的 | @版权所有 © 杜少雄 2021 保留所有权利<a style="color:#AAAAAA;" target="_blank" href='https://beian.miit.gov.cn/'>&nbsp;&nbsp;&nbsp;晋ICP备2020012997号-2</a> <p>
+
+
+      <!--访问量数据-->
+      <p class="item">访问量 : <span th:text="${session.views}"></span> &nbsp;&nbsp;&nbsp; 勉强运行 : <span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </p>
+    </div>
+  </div>
+
+</footer>
+
+
+<th:block th:fragment="script">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+
+</th:block>
+
+</body>
+</html>

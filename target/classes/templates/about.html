@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head  th:replace="_fragments :: head(~{::title})">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../static/css/me.css">
+</head>
+
+<!--随机古诗词-->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<body>
+
+  <!--导航-->
+  <nav th:replace="_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small " >
+    <div class="ui container">
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui teal header item">Blog</h2>
+        <a href="#" class=" m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+        <a href="#" class=" m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+        <a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+        <div class="right m-item item m-mobile-hide">
+          <div class="ui icon inverted transparent input m-margin-tb-tiny">
+            <input type="text" placeholder="Search....">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+  </nav>
+
+  <!--中间内容-->
+  <div  class="m-container m-padded-tb-big animated fadeIn">
+
+    <!--适配移动端-->
+    <div class="ui container">
+
+      <div class="ui stackable grid">
+
+        <!--左侧-->
+        <div class="five wide column">
+          <div class="ui segment">
+              <img th:src="${session.aboutMeImageUrl}" class="ui medium circular image" align="center" >
+          </div>
+
+          <!--联系-->
+          <div class="ui attached bottom segment center aligned">
+            <a target="_blank" title="Github" href="https://github.com/shaoxiongdu" class="ui icon circular button">
+              <i class="github icon"></i>
+            </a>
+
+            <a target="_blank" title="BiliBili主页"  href="https://space.bilibili.com/175560067" class="ui icon circular button">
+              <i class="bitcoin icon"></i>
+            </a>
+
+            <a target="_blank" title="微博主页" href="https://weibo.com/7510528502/profile" class="ui icon circular button">
+              <i class="weibo icon"></i>
+            </a>
+
+            <a target="_blank" title="steam主页"  href="https://steamcommunity.com/profiles/76561198446690218/" class="ui icon circular button">
+              <i class="steam icon"></i>
+            </a>
+
+            <a target="_blank" title="给我发送邮件: email@shaoxiongdu.cn" href="mailto:email@shaoxiongdu.cn" class="ui icon circular button">
+              <i class="mail icon"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!--右侧-->
+        <div class="eleven wide column">
+          <!--顶部-->
+          <div class="ui top attached segment">
+            <div class="center aligned ui header" th:utext="${session.aboutMeContent}"></div>
+
+            <div class="attached segment ui aligned">
+
+              <h3 align="center"><span id="jinrishici-sentence">正在加载今日诗词...</span></h3>
+
+             <!--个人标签-->
+              <div class="attached segment ui aligned" >
+
+                  <!--循环取出技能清单-->
+                  <div th:each="skill:${session.skillList}" class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h4 th:text="${skill.getSkillName()}"></h4></div>
+
+              </div>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--适配移动端-->
+    </div>
+
+    <!--中间内容-->
+  </div>
+
+  <br>
+  <!--底部footer-->
+  <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+
+  </footer>
+  <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+  <!--/*/</th:block>/*/-->
+
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+  </script>
+
+</body>
+</html>

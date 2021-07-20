@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shaoxiongdu.dao.TWebsiteInfoDao">
+
+    <resultMap type="com.shaoxiongdu.entity.TWebsiteInfo" id="TWebsiteInfoMap">
+        <result property="valueName" column="value_name" jdbcType="VARCHAR"/>
+        <result property="value" column="value" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TWebsiteInfoMap">
+        select value_name,
+               value
+        from blog.t_website_info
+        where value_name = #{valueName}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="TWebsiteInfoMap">
+        select value_name,
+               value
+        from blog.t_website_info limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TWebsiteInfoMap">
+        select
+        value_name, value
+        from blog.t_website_info
+        <where>
+            <if test="valueName != null and valueName != ''">
+                and value_name = #{valueName}
+            </if>
+            <if test="value != null and value != ''">
+                and value = #{value}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="valueName" useGeneratedKeys="true">
+        insert into blog.t_website_info(value)
+        values (#{value})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="valueName" useGeneratedKeys="true">
+        insert into blog.t_website_info(value)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.value})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="valueName" useGeneratedKeys="true">
+        insert into blog.t_website_info(value)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.value})
+        </foreach>
+        on duplicate key update
+        value = values(value)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update blog.t_website_info
+        <set>
+            <if test="value != null and value != ''">
+                value = #{value},
+            </if>
+        </set>
+        where value_name = #{valueName}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from blog.t_website_info
+        where value_name = #{valueName}
+    </delete>
+
+</mapper>
+
