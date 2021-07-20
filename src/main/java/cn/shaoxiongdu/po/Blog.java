@@ -6,34 +6,80 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * 博客
  * Created by limi on 2017/10/14.
+ *
+ * @author 写Bug的小杜 <email@shaoxiongdu.cn>
+ * @date 2021/07/18
  */
 @Entity
 @Table(name = "t_blog")
 public class Blog {
 
+    /**
+     * id
+     */
     @Id
     @GeneratedValue
     private Long id;
 
+    /**
+     * 标题
+     */
     private String title;
 
+    /**
+     * 内容
+     */
     @Basic(fetch = FetchType.LAZY)
     @Lob
     private String content;
+    /**
+     * 第一个图片
+     */
     private String firstPicture;
+    /**
+     * 标记
+     */
     private String flag;
+    /**
+     * 的观点
+     */
     private Integer views;
+    /**
+     * 升值
+     */
     private boolean appreciation;
+    /**
+     * 分享的声明
+     */
     private boolean shareStatement;
+    /**
+     * commentabled
+     */
     private boolean commentabled;
+    /**
+     * 发表
+     */
     private boolean published;
+    /**
+     * 推荐
+     */
     private boolean recommend;
+    /**
+     * 创建时间
+     */
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
+    /**
+     * 更新时间
+     */
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
 
+    /**
+     * 类型
+     */
     @ManyToOne
     private Type type;
 

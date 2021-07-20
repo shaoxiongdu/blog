@@ -21,7 +21,9 @@ import javax.persistence.criteria.*;
 import java.util.*;
 
 /**
- * Created by limi on 2017/10/20.
+ * 博客服务impl
+ * @author 写Bug的小杜 <email@shaoxiongdu.cn>
+ * @date 2021/07/18
  */
 @Service
 public class BlogServiceImpl implements BlogService {
@@ -55,6 +57,13 @@ public class BlogServiceImpl implements BlogService {
     }
 
 
+    /**
+     * 博客列表
+     *
+     * @param pageable 可分页
+     * @param blog     博客
+     * @return {@link Page<Blog>}
+     */
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
         return blogRepository.findAll(new Specification<Blog>() {
