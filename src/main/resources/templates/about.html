@@ -88,8 +88,14 @@
              <!--个人标签-->
               <div class="attached segment ui aligned" >
 
+                  <ul>
+
+
                   <!--循环取出技能清单-->
-                  <div th:each="skill:${session.skillList}" class="me-margin-td-small m-padded-tb m-margin-top-small ui label left pointing teal basic"><h4 th:text="${skill.getSkillName()}"></h4></div>
+                  <li th:each="skill:${session.skillList}" >
+                      <p  th:text="${skill.getSkillName()}"></p>
+                  </li>
+                  </ul>
 
               </div>
 

@@ -1,58 +1,50 @@
 package cn.shaoxiongdu.util;
 
+import cn.shaoxiongdu.config.BaiduApiConfig;
 import com.alibaba.fastjson.JSON;
 import com.baidubce.http.ApiExplorerClient;
 import com.baidubce.http.AppSigner;
 import com.baidubce.http.HttpMethodName;
 import com.baidubce.model.ApiExplorerRequest;
 import com.baidubce.model.ApiExplorerResponse;
-
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  *  百度API接口
  */
 public class BaiduApi {
 
-    public static void main(String[] args) {
+    @Value("${accessKey}")
+    private  String accessKey;
 
-        String addressByIp = getAddressByIp("123.56.54.169");
+    @Value("${secretKey}")
+    private  String secretKey;
 
-
+    @Override
+    public String toString() {
+        return "BaiduApi{" +
+                "accessKey='" + accessKey + '\'' +
+                ", secretKey='" + secretKey + '\'' +
+                '}';
     }
-
-    /**
-     * 构造方法私有化 防止外部创建对象
-     */
-    private BaiduApi(){
-
-    }
-
-    /**
-     * 百度API AccessKey 此处填写您自己的key 申请地址:
-     *
-     *  https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9
-     *
-     */
-    private final static String ACCESS_KEY = "0962af51ad37430786a8723d9e018f71";
-
-    /**
-     * 百度API SecretKey 此处填写您自己的key
-     */
-    private static String SECRET_KEY = "";
 
     /**
      * 通过IP获取地址
      * @param ip
      * @return 返回地址信息
      */
-    public static String getAddressByIp(String ip){
+    public String getAddressByIp(String ip){
 
         /**
          * 未填写SECRET_KEY时，返回未知地址
          * 阿斯蒂芬
          */
-        if( ACCESS_KEY == null || "".equals(ACCESS_KEY)) return "未知";
-        if( SECRET_KEY == null || "".equals(SECRET_KEY)) return "未知";
+        if( accessKey == null || "".equals(accessKey)) {
+            return "未知";
+        }
+        if( secretKey == null || "".equals(secretKey)) {
+            return "未知";
+        }
 
         /*
           通过IP获取地址的百度API请求地址路径
@@ -62,7 +54,7 @@ public class BaiduApi {
         ApiExplorerRequest request = new ApiExplorerRequest(HttpMethodName.POST, requestPath);
 
         /*设置请求头的百度api参数*/
-        request.setCredentials(ACCESS_KEY, SECRET_KEY);
+        request.setCredentials(accessKey, secretKey);
 
         request.addHeaderParameter("Content-Type", "application/json;charset=UTF-8");
 
@@ -216,4 +208,8 @@ public class BaiduApi {
         }
     }
 
+
+
 }
+
+

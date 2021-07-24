@@ -68,27 +68,24 @@
    - 默认管理员账号admin,密码为admin    注：数据库中存储的是MD5加密之后的密码，修改需要注意。
    - 后台依次添加分类，标签，博客内容  博客主页刷新即可更新。
 
-### 4.注意事项
+### 4.关于百度API
 
-   1. 项目端口号可在主配置文件中修改，默认为 80 端口。
+  项目中使用了百度的通过IP查询地址的API  如果您需要使用， 在 [百度API申请地址](https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9)
+中申请，
+  然后将AccessKey，AppSecret填入配置文件中即可。 不填默认网站访问记录中位置信息为【未知】
 
-   2. 项目中使用了百度的IP查询地址API  如果您需要使用， 在 [百度API申请地址](https://apis.baidu.com/store/detail/31e507c6-caa1-4b25-8786-3af1543a79b9)
-中申请，然后将AccessKey，AppSecret填入工具类BaiduApi中即可 
+![image-20210724142035765](https://gitee.com/ShaoxiongDu/imageBed/raw/master//images/image-20210724142035765.png)
 
-## 四.自定义博客属性
+## 四.自定义博客UI
 
-  - #### 主页底部栏和顶部菜单模板文件
+  - #### 底部栏和顶部菜单模板文件
 
       - 底部模板文件 src/main/resources/templates/_fragments.html
 
-  - #### 管理员页面顶部底部模板文件
-
-      - src/main/resources/templates/admin/_fragments.html
-
   - #### 【关于我】页面自定义属性
 
-    - 关于作者文本由t_website_info表中的aboutMeContent字段维护，修改更新即可。
-    - 照片地址可在【管理员后台】->【网站设置】中修改 （在线地址）
+    - 关于作者的文本信息由t_website_info表中的aboutMeContent字段维护，手动修改即可。
+    - 照片地址可在【管理员后台】->【网站设置】中修改 （图片的URL在线地址）
     
   - #### 主页顶部签名
 

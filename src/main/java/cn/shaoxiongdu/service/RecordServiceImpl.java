@@ -18,6 +18,9 @@ import java.util.List;
 public class RecordServiceImpl implements RecordService {
 
     @Autowired
+    private BaiduApi baiduApi;
+
+    @Autowired
     private RecordRepository recordRepository;
 
     @Override
@@ -40,7 +43,7 @@ public class RecordServiceImpl implements RecordService {
             record.setTotalNumberOfVisits(new Long(1));
 
             /*通过IP获取地址*/
-            record.setAddress(BaiduApi.getAddressByIp(record.getIp()));
+            record.setAddress(baiduApi.getAddressByIp(record.getIp()));
 
             Record saveRecord =  recordRepository.save(record);
 
