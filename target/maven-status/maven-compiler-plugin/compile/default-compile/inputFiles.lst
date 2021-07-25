@@ -17,6 +17,7 @@ C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\RecordService.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\dao\TypeRepository.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\NotFoundException.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\WebsiteInfoService.java
+C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\config\BaiduApiConfig.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\CommentService.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\BlogServiceImpl.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\po\Tag.java

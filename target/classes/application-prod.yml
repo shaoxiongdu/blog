@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://rm-bp10dkvhokk30a8ae6o.mysql.rds.aliyuncs.com:3306/blog
+    url: jdbc:mysql://rm-bp10dkvhokk30a8ae6o.mysql.rds.aliyuncs.com:3306/blog?useSSL=true
     username: root
     password: DSXdsx05117218
   jpa:
@@ -15,4 +15,7 @@ logging:
     com.lrm: error
   file: log/blog.log
 
-
+# 用于通过IP查找地址的百度API
+baiduApi:
+  accessKey: 0962af51ad37430786a8723d9e018f71
+  secretKey: f3c38615a64c4a6cbdc48fe2717830bc

@@ -1,6 +1,5 @@
 package cn.shaoxiongdu.util;
 
-import cn.shaoxiongdu.config.BaiduApiConfig;
 import com.alibaba.fastjson.JSON;
 import com.baidubce.http.ApiExplorerClient;
 import com.baidubce.http.AppSigner;
@@ -8,10 +7,14 @@ import com.baidubce.http.HttpMethodName;
 import com.baidubce.model.ApiExplorerRequest;
 import com.baidubce.model.ApiExplorerResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
 
 /**
  *  百度API接口
  */
+@Component
+@PropertySource("application-prod.yml")
 public class BaiduApi {
 
     @Value("${accessKey}")
