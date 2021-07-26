@@ -11,11 +11,10 @@ spring:
     show-sql: false
 logging:
   level:
-    root: error
-    com.lrm: error
+    root: warn
   file: log/blog.log
 
 # 用于通过IP查找地址的百度API
 baiduApi:
-  accessKey:
+  accessKey: DSXdsx05117218
   secretKey: f3c38615a64c4a6cbdc48fe2717830bc

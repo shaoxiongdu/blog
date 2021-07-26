@@ -11,8 +11,7 @@ spring:
     show-sql: false
 logging:
   level:
-    root: error
-    com.lrm: error
+    root: warn
   file: log/blog.log
 
 # 用于通过IP查找地址的百度API

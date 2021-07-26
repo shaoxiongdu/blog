@@ -7,6 +7,7 @@ import com.baidubce.http.HttpMethodName;
 import com.baidubce.model.ApiExplorerRequest;
 import com.baidubce.model.ApiExplorerResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
@@ -14,13 +15,12 @@ import org.springframework.stereotype.Component;
  *  百度API接口
  */
 @Component
-@PropertySource("application-prod.yml")
 public class BaiduApi {
 
-    @Value("${accessKey}")
+    @Value("${baiduApi.accessKey}")
     private  String accessKey;
 
-    @Value("${secretKey}")
+    @Value("${baiduApi.secretKey}")
     private  String secretKey;
 
     @Override
@@ -74,7 +74,8 @@ public class BaiduApi {
             response = client.sendRequest(request);
 
         } catch (Exception e) {
-            e.printStackTrace();
+
+            return "百度API异常，请检查配置文件";
         }
 
         // 返回结果格式为Json字符串
