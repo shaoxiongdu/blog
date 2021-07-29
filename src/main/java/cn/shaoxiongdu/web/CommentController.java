@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu.web;
 
 import cn.shaoxiongdu.service.BlogService;
@@ -14,9 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by limi on 2017/10/22.
- */
+
 @Controller
 public class CommentController {
 
@@ -26,15 +28,11 @@ public class CommentController {
     @Autowired
     private BlogService blogService;
 
-    @Value("${comment.avatar}")
-    private String avatar;
-
     @GetMapping("/comments/{blogId}")
     public String comments(@PathVariable Long blogId, Model model) {
         model.addAttribute("comments", commentService.listCommentByBlogId(blogId));
         return "blog :: commentList";
     }
-
 
     @PostMapping("/comments")
     public String post(Comment comment, HttpSession session) {
@@ -44,8 +42,6 @@ public class CommentController {
         if (user != null) {
             comment.setAvatar(user.getAvatar());
             comment.setAdminComment(true);
-        } else {
-            comment.setAvatar(avatar);
         }
         commentService.saveComment(comment);
         return "redirect:/comments/" + blogId;

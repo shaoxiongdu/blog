@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 .cm-s-elegant span.cm-number, .cm-s-elegant span.cm-string, .cm-s-elegant span.cm-atom {color: #762;}
 .cm-s-elegant span.cm-comment {color: #262; font-style: italic; line-height: 1em;}
 .cm-s-elegant span.cm-meta {color: #555; font-style: italic; line-height: 1em;}

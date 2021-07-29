@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 .cm-s-erlang-dark.CodeMirror { background: #002240; color: white; }
 .cm-s-erlang-dark div.CodeMirror-selected { background: #b36539 !important; }
 .cm-s-erlang-dark.CodeMirror ::selection { background: rgba(179, 101, 57, .99); }

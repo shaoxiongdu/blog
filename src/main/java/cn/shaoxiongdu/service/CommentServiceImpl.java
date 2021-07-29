@@ -1,8 +1,13 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu.service;
 
 import cn.shaoxiongdu.dao.CommentRepository;
 import cn.shaoxiongdu.po.Comment;
-import cn.shaoxiongdu.util.PushWechatMessageUtil;
+import cn.shaoxiongdu.util.PushWechatMessage;
+import cn.shaoxiongdu.util.RadomImage;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -15,18 +20,40 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Created by limi on 2017/10/22.
- */
 @Service
 public class CommentServiceImpl implements CommentService {
 
     @Autowired
     private CommentRepository commentRepository;
 
+    @Autowired
+    private PushWechatMessage pushWechatMessage;
+
     @Override
     public void deleteCommentByBlogId(Long blogId) {
         commentRepository.deleteByBlogId(blogId);
+    }
+
+    /**
+     * 通过pushMessage将博客评论推送给微信
+     * @param comment
+     * @return 是否成功
+     */
+    @Override
+    public String pushCommentMessage(Comment comment) {
+        String title = "您的个人博客有一条新评论啦！";
+
+        String content = "  点击查看详情                                                          " +
+                "<br>博客标题:"+comment.getBlog().getTitle()+
+                        "<br>用户名称:"+comment.getNickname()+
+                        "<br>用户邮箱:"+comment.getEmail()+
+                        "<br>评论时间:"+new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss").format(new Date()) +
+                        "<br>评论内容:"+comment.getContent() +
+                        "<br>博客地址: <a href='http://www.shaoxiongdu.cn/blog/"+comment.getBlog().getId() + "'>"+"http://www.shaoxiongdu.cn/blog/"+comment.getBlog().getId()+"</a>";
+
+        String result = pushWechatMessage.pushMessageByPost(title,content);
+
+        return result;
     }
 
     @Override
@@ -40,17 +67,8 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public Comment saveComment(Comment comment) {
 
-        String title = "博客评论通知";
-
-        String content =
-                "评论博客标题:"+comment.getBlog().getTitle()+
-                "<br>用户名称:"+comment.getNickname()+
-                "<br>用户邮箱:"+comment.getEmail()+
-                "<br>评论内容:"+comment.getContent()+
-                "<br>评论时间:"+new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss").format(new Date());
-
-        String result = PushWechatMessageUtil.pushMessageByPost(title,content);
-        System.out.println("result = " + result);
+        //推送到微信
+        pushCommentMessage(comment);
 
         Long parentCommentId = comment.getParentComment().getId();
         if (parentCommentId != -1) {
@@ -58,13 +76,13 @@ public class CommentServiceImpl implements CommentService {
         } else {
             comment.setParentComment(null);
         }
+
+        //设置评论时间
         comment.setCreateTime(new Date());
 
-        String avatarRequestUrl = "https://picsum.photos/id/";
-        avatarRequestUrl += new Random().nextInt(1000) + 1;
-        avatarRequestUrl += "/200";
+        //设置头像
+        comment.setAvatar(RadomImage.getRadomImageUrl("200"));
 
-        comment.setAvatar(avatarRequestUrl);
         return commentRepository.save(comment);
     }
 

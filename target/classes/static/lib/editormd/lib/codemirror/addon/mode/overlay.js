@@ -1,5 +1,6 @@
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
 
 // Utility function that allows modes to be combined. The mode given
 // as the base argument takes care of most of the normal mode

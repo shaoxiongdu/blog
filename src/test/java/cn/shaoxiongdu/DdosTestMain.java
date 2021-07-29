@@ -1,13 +1,13 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-/**
- * ClassName : DdosTestMain
- * (c)CopyRight 2021/5/9 All rights reserved to ShaoxiongDu<shaoxiongdu.dev@gmail.com>
- */
 public class DdosTestMain {
 
     public static void main(String[] args) throws IOException, InterruptedException {

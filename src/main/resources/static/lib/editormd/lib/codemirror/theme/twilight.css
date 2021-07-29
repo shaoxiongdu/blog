@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 .cm-s-twilight.CodeMirror { background: #141414; color: #f7f7f7; } /**/
 .cm-s-twilight .CodeMirror-selected { background: #323232 !important; } /**/
 .cm-s-twilight.CodeMirror ::selection { background: rgba(50, 50, 50, 0.99); }

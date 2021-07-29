@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 INSERT INTO blog.t_skill (id, skill) VALUES (1, '计算机网络');
 INSERT INTO blog.t_skill (id, skill) VALUES (2, '数据结构和算法');
 INSERT INTO blog.t_skill (id, skill) VALUES (3, '数据库原理');

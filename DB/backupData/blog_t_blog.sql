@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 INSERT INTO blog.t_blog (id, appreciation, commentabled, content, create_time, description, first_picture, flag, published, recommend, share_statement, title, update_time, views, type_id, user_id) VALUES (1, true, true, '# TEST
 
 ## test

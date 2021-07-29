@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu.service;
 
 import cn.shaoxiongdu.NotFoundException;
@@ -14,9 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by limi on 2017/10/16.
- */
 @Service
 public class TypeServiceImpl implements TypeService {
 

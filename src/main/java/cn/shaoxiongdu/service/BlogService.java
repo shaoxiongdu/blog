@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu.service;
 
 import cn.shaoxiongdu.po.Blog;
@@ -8,13 +12,6 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 博客服务
- * Created by limi on 2017/10/20.
- *
- * @author 写Bug的小杜 <email@shaoxiongdu.cn>
- * @date 2021/07/18
- */
 public interface BlogService {
 
 

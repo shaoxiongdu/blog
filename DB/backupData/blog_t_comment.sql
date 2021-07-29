@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 INSERT INTO blog.t_comment (id, admin_comment, avatar, content, create_time, email, nickname, blog_id, parent_comment_id) VALUES (3, false, 'https://picsum.photos/id/434/200', '测试', '2021-03-26 17:19:00', 'shaoxiong.dev@aliyun.com', 'admin', 1, null);
 INSERT INTO blog.t_comment (id, admin_comment, avatar, content, create_time, email, nickname, blog_id, parent_comment_id) VALUES (4, false, 'https://picsum.photos/id/325/200', '测试', '2021-03-27 15:25:35', '1@qq.com', 'admin', 3, null);
 INSERT INTO blog.t_comment (id, admin_comment, avatar, content, create_time, email, nickname, blog_id, parent_comment_id) VALUES (5, false, 'https://picsum.photos/id/795/200', '恭喜你测试成功', '2021-03-27 23:06:52', '10086@cmcc', '扫地僧', 3, 4);

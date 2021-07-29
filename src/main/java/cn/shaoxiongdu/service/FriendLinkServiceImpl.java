@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu.service;
 
 import cn.shaoxiongdu.dao.FriendLinkRepository;
@@ -8,10 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * ClassName : FriendLinkServiceImpl
- * (c)CopyRight 2021/5/11 All rights reserved to ShaoxiongDu<shaoxiongdu.dev@gmail.com>
- */
+
 @Service
 public class FriendLinkServiceImpl implements FriendLinkService {
 

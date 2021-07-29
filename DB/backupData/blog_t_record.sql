@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 INSERT INTO blog.t_record (id, address, ip, last_visit_time, total_number_of_visits) VALUES (3948, '中国山西太原万柏-中国电信', '223.11.127.181', '2021-06-01 20:29:27', 4);
 INSERT INTO blog.t_record (id, address, ip, last_visit_time, total_number_of_visits) VALUES (3949, '蒙古', '180.149.125.175', '2021-06-26 16:00:12', 4);
 INSERT INTO blog.t_record (id, address, ip, last_visit_time, total_number_of_visits) VALUES (3950, '韩国首尔', '192.186.16.50', '2021-06-11 05:53:11', 8);

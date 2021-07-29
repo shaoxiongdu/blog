@@ -1,4 +1,8 @@
 /*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
+/*
  * Editor.md
  *
  * @file        editormd.logo.css 
@@ -10,7 +14,6 @@
  * @updateTime  2015-06-09
  */
 
-/*! prefixes.scss v0.1.0 | Author: Pandao | https://github.com/pandao/prefixes.scss | MIT license | Copyright (c) 2015 */
 @font-face {
   font-family: 'editormd-logo';
   src: url("../fonts/editormd-logo.eot?-5y8q6h");

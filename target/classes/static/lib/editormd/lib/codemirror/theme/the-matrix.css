@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 .cm-s-the-matrix.CodeMirror { background: #000000; color: #00FF00; }
 .cm-s-the-matrix div.CodeMirror-selected { background: #2D2D2D !important; }
 .cm-s-the-matrix.CodeMirror ::selection { background: rgba(45, 45, 45, 0.99); }

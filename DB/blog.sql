@@ -90,6 +90,10 @@ create table t_friend_link
     link        varchar(255) null,
     name        varchar(255) null
 );
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 /*插入网站信息数据*/
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', 'about me something ');
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeImageUrl', 'https://gitee.com/ShaoxiongDu/imageBed/raw/master/logo.jpg');

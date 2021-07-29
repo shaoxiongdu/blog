@@ -1,7 +1,6 @@
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
-
-// Slim Highlighting for CodeMirror copyright (c) HicknHack Software Gmbh
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS

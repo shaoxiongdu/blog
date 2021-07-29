@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 INSERT INTO blog.t_friend_link (id, description, link, name) VALUES (1, '站长的爱情故事', 'http://zwydsx.love', '站长的爱情');
 INSERT INTO blog.t_friend_link (id, description, link, name) VALUES (3, null, 'https://luan.ma/', '乱码博客');
 INSERT INTO blog.t_friend_link (id, description, link, name) VALUES (4, '记录技术与人生感想的小窝', 'https://www.weiaini.xyz', '阡陌的小窝');

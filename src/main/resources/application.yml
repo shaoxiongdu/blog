@@ -1,11 +1,21 @@
-spring:
-  thymeleaf:
-    mode: HTML
-  profiles:
-    active: prod
-  messages:
-    basename: i18n/messages
-
-comment.avatar: /images/favicon.ico
 server:
   port: 80
+
+spring:
+
+  thymeleaf:
+    mode: HTML
+
+  datasource:
+    url: jdbc:mysql://rm-bp10dkvhokk30a8ae6o.mysql.rds.aliyuncs.com:3306/blog?useSSL=true
+    username: root
+    password: 0962af51ad37430786a8723d9e018f71
+
+# 用于通过IP查找地址的百度API
+baiduApi:
+  accessKey:
+  secretKey: f3c38615a64c4a6cbdc48fe2717830bc
+
+# 用于微信推送消息
+pushMessage:
+  token: 696841125e104edc816aaf85edfd3967

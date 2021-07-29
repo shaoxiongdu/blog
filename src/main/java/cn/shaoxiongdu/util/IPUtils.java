@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu.util;
 
 import org.slf4j.Logger;
@@ -8,15 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-
-/**
- * Ip地址
- *
- * @author niunafei
- * @function
- * @email niunafei0315@163.com
- * @date 2020/9/28  11:23 AM
- */
 public class IPUtils {
     private static Logger logger = LoggerFactory.getLogger(IPUtils.class);
     private static final String IP_UTILS_FLAG = ",";

@@ -1,3 +1,7 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 INSERT INTO blog.t_blog_tags (blogs_id, tags_id) VALUES (4, 1);
 INSERT INTO blog.t_blog_tags (blogs_id, tags_id) VALUES (2, 1);
 INSERT INTO blog.t_blog_tags (blogs_id, tags_id) VALUES (5, 1);

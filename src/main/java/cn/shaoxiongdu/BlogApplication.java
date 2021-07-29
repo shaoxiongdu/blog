@@ -1,6 +1,11 @@
+/*
+ * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
+ */
+
 package cn.shaoxiongdu;
 
 import cn.shaoxiongdu.util.BaiduApi;
+import cn.shaoxiongdu.util.PushWechatMessage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -10,14 +15,5 @@ public class BlogApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(BlogApplication.class, args);
-
-		System.out.println("IoC容器中所有的组件：");
-		int count = 0;
-		String[] beanDefinitionNames = run.getBeanDefinitionNames();
-		for (String beanDefinitionName : beanDefinitionNames) {
-			System.out.println("IoC容器中"  + ++count + "的组件: " + beanDefinitionName + "如下:");
-			System.out.println(run.getBean(beanDefinitionName));
-			System.out.println("============================================");
-		}
 	}
 }
