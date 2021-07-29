@@ -5,19 +5,19 @@ create table t_record
     ip varchar(255) null,
     last_visit_time datetime null,
     total_number_of_visits bigint null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_tag
 (
     id bigint auto_increment primary key,
     name varchar(255) null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_type
 (
     id bigint auto_increment primary key,
     name varchar(255) not null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_user
 (
@@ -30,7 +30,7 @@ create table t_user
     type int null,
     update_time datetime null,
     username varchar(255) null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_blog
 (
@@ -50,13 +50,13 @@ create table t_blog
     views int null,
     type_id bigint null,
     user_id bigint null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_blog_tags
 (
     blogs_id bigint not null,
     tags_id bigint not null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_comment
 (
@@ -69,19 +69,19 @@ create table t_comment
     nickname varchar(255) null,
     blog_id bigint null,
     parent_comment_id bigint null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_website_info
 (
     value_name varchar(255) not null primary key,
     value varchar(255) null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_skill
 (
     id  bigint auto_increment primary key,
     skill varchar(255) null
-);
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 create table t_friend_link
 (
@@ -89,10 +89,8 @@ create table t_friend_link
     description varchar(255) null,
     link        varchar(255) null,
     name        varchar(255) null
-);
-/*
- * 版权所有 (c) 2021. 写Bug的小杜 <https://github.com/shaoxiongdu>  保留所有权利
- */
+)ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 
 /*插入网站信息数据*/
 INSERT INTO blog.t_website_info (value_name, value) VALUES ('aboutMeContent', 'about me something ');
