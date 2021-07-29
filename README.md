@@ -5,22 +5,21 @@
     <img src="https://img.shields.io/badge/后端框架-SpringBoot-blue">
     <img src="https://img.shields.io/badge/数据源-SpringBootJPA-green">
     <img src="https://img.shields.io/badge/数据库-MySQL-orange">
-    <img src="https://img.shields.io/badge/前端UI-SemanticUI-red">
+    <img src="https://img.shields.io/badge/前端UI-SemanticUI-red"> 
   <img src="https://visitor-badge.glitch.me/badge?page_id=shaoxiongdu.JVMStudy" >
 
-<h3><a href="https://shaoxiongdu.github.io/blog/#/" target="_blank">在线站点（阅读体验更好）</a></h3>
+<h3>
+    <a href="https://shaoxiongdu.github.io/blog/#/" target="_blank">在线站点 </a>
+    <a href="http://www.shaoxiongdu.cn" target ="_blank" >博客预览</a>
+</h3>
 
 </div>
 
+## 一. Star曲线
+
 [![Stargazers over time](https://starchart.cc/shaoxiongdu/blog.svg)](https://github.com/shaoxiongdu/blog)
 
-## 一.项目预览
-
- 1.博客在线预览
-
-> <a href="http://www.shaoxiongdu.cn" target ="_blank" >www.shaoxiongdu.cn </a>
-
-2.博客截图预览
+## 二. 截图预览
 
 ### 2.1. 首页
 ![首页截图](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210430180342704.png)
@@ -33,9 +32,6 @@
 
 ### 2.4. 网站访问
 ![登录管理页面](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210604135418865.png)
-
-### 2.5. 博客管理
-![博客管理页面](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210604135440292.png)
 
  .......
 
