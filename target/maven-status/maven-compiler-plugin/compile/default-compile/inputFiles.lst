@@ -17,7 +17,6 @@ C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\RecordService.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\dao\TypeRepository.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\NotFoundException.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\WebsiteInfoService.java
-C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\config\BaiduApiConfig.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\CommentService.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\BlogServiceImpl.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\po\Tag.java
@@ -38,6 +37,7 @@ C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\po\Comment.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\FriendLinkService.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\web\CommentController.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\BlogApplication.java
+C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\util\RadomImage.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\po\Record.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\WebsiteInfoServiceImpl.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\util\MarkdownUtils.java
@@ -45,10 +45,10 @@ C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\vo\BlogQuery.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\dao\BlogRepository.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\BlogService.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\po\Blog.java
-C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\util\PushWechatMessageUtil.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\util\MyBeanUtils.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\web\TypeShowController.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\service\RecordServiceImpl.java
+C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\util\PushWechatMessage.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\web\admin\TagController.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\util\BaiduApi.java
 C:\DevWorkSpace\blog\src\main\java\cn\shaoxiongdu\po\Type.java

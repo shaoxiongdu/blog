@@ -8,6 +8,17 @@
 
 <head th:fragment="head(title)">
 
+  <!--关键字爬虫-->
+  <link rel="canonical" href="http://www.shaoxiongdu.cn">
+  <meta name="keywords" content="杜少雄,个人博客,博客,少雄,少雄杜,杜少雄,杜少雄的个人博客,个人博客,blog,博客"/>
+
+  <meta name="description" content="杜少雄的个人博客 分享一些学习中遇到的问题或者学习笔记"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+
+  <meta name="baidu_union_verify" content="f4ab699b4393f6125420d0b18599d115">
+
   <!--百度统计-->
   <script>
     var _hmt = _hmt || [];
@@ -59,8 +70,8 @@
       <!--github开源地址-->
       <div>
         <a href="https://github.com/shaoxiongdu/blog" target="_blank"  class="right m-item item m-mobile-hide "><i class="icon big github"></i></a>
-
       </div>
+
 
 
     </div>
@@ -152,7 +163,55 @@
   <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
   <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
   <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+  <script th:src="@{/js/config.js}"></script>
+
   <script>
+
+    /* 鼠标点击特效 */
+    jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+        //随机选择文字
+        var clickWord = config.clickWord;
+
+        var a_idx = Math.floor((Math.random() * clickWord.length));
+        // 随机产生文字颜色
+        var color1 = Math.floor((Math.random() * 255));
+        var color2 = Math.floor((Math.random() * 255));
+        var color3 = Math.floor((Math.random() * 255));
+
+        a_idx = (a_idx + 1) % clickWord.length;
+        var $i = $(`<span/>`).text(clickWord[a_idx]);
+
+        var x = e.pageX,
+                y = e.pageY;
+        $i.css({　　　　　　//文字样式--------------------------
+          "z-index": 9999999999999 ,
+          "top": y - 20,
+          "left": x,
+          "position": "absolute",
+          "font-family":"mmm",
+          "fontSize":Math.floor((Math.random() * 22)+15),
+          "font-weight": "bold",
+          "color": "rgb("+color1+","+color2+","+color3+")",
+          "-webkit-user-select":"none",
+          "-moz-user-select":"none",
+          "-ms-user-select":"none",
+          "user-select":"none",
+        });
+        $("body").append($i);
+        $i.animate({
+                  "top": y - 200,  //点击后文字上升高度
+                  "opacity": 0    //透明度
+                },
+                1500, //文字消失时间
+                function() {
+                  $i.remove();
+                });
+      });
+    });
+
+
+
     $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
 
     // 运行时间统计
