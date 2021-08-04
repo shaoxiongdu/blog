@@ -10,7 +10,7 @@
 
 <h3>
     <a href="https://shaoxiongdu.github.io/blog/#/" target="_blank">在线站点 </a>
-    <a href="http://www.shaoxiongdu.cn" target ="_blank" >博客预览</a>
+    <a href="http://123.56.54.169" target ="_blank" >博客预览</a>
 </h3>
 
 </div>
