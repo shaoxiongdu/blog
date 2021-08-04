@@ -1,4 +1,4 @@
-> 服务器于2021-10-1过期，决定不在维护此项目，新博客：<a href='https://shaoxiongdu.cn'>shaoxiongdu.cn</a>
+> 通知：阿里云服务器于2021-10-1到期 届时，此博客系统将不在维护， 新博客： [shaoxiongdu.cn](https://shaoxiongdu.cn) 欢迎大家继续捧场！
 
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
 
