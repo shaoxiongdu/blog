@@ -1,3 +1,5 @@
+> 服务器于2021-10-1过期，决定不在维护此项目，新博客：<a href='https://shaoxiongdu.cn'>shaoxiongdu.cn</a>
+
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
 
 <br>
@@ -11,7 +13,6 @@
 <h3>
     <a href="https://shaoxiongdu.github.io/blog/#/" target="_blank">在线站点 </a>
     <a href="http://123.56.54.169" target ="_blank" >博客预览</a>
-    <p>服务器于2021-10-1过期，决定不在维护此项目，新博客采用静态网页存储：<a href='https://shaoxiongdu.cn'>shaoxiongdu.cn</a></p>
 </h3>
 
 </div>
