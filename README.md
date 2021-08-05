@@ -114,8 +114,6 @@
 4. 新建 Pull Request，填写必要信息。
 5. 等待审核即可。通过之后会邮件通知您。
 
-## 八.更多开源项目
+## 八.分享好玩的项目，挖掘开源的价值！
 
-####  分享好玩的项目，挖掘开源的价值！
-
-> ![Github推荐](https://gitee.com/ShaoxiongDu/imageBed/raw/master/GithubShareQR.jpg)
+![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210805162948040.png)
