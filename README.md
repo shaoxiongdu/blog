@@ -113,7 +113,3 @@
 3. 提交代码
 4. 新建 Pull Request，填写必要信息。
 5. 等待审核即可。通过之后会邮件通知您。
-
-## 八.分享好玩的项目，挖掘开源的价值！
-
-![](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210805162948040.png)
