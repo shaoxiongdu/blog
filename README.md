@@ -8,6 +8,7 @@
     <img src="https://img.shields.io/badge/数据源-SpringBootJPA-green">
     <img src="https://img.shields.io/badge/数据库-MySQL-orange">
     <img src="https://img.shields.io/badge/前端UI框架-SemanticUI-red"> 
+    <img src="https://img.shields.io/badge/前端模板引擎-Themeleaf-red"> 
   <img src="https://visitor-badge.glitch.me/badge?page_id=shaoxiongdu.JVMStudy" >
 
 <h3>
