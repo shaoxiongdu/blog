@@ -1,4 +1,4 @@
-> 通知：本人的阿里云服务器于2021-10-1到期 届时，[博客预览](http://123.56.54.169)功能将不在维护， 新博客： [shaoxiongdu.cn](https://shaoxiongdu.cn) 欢迎大家继续捧场！
+> 通知：项目的云服务器于2021-10-1到期，由于我目前为止还没毕业，觉得服务器不在继续续费。 届时，[博客预览](http://123.56.54.169)功能将不在维护， 我的静态博客： [shaoxiongdu.cn](https://shaoxiongdu.cn) 将会持续维护！
 
 ![image-20210428175752824](https://gitee.com/ShaoxiongDu/imageBed/raw/master/image-20210428175752824.png)
 
